@@ -1,0 +1,15 @@
+Convert each of the following decimal numbers into its equivalent binary number:
+
+6    |  Answer: 110
+44   |  Answer: 101100
+72   |  Answer: 1001000
+131  |  Answer: 10000011
+
+Convert each of the following binary numbers into its equivalent decimal number:
+
+100     |  Answer: 4
+1011    |  Answer: 11
+101010  |  Answer: 42
+1001110 |  Answer: 78
+
+
