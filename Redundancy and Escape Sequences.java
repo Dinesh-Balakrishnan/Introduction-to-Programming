@@ -1,7 +1,10 @@
-//Uses escape sequences to create an ASCII representation of an egg.
+/*                              PROBLEM:
+Uses escape sequences to create an ASCII representation of an egg.
+*/
 
 public class Egg{
     public static void main(String[] args){
+        //Simple practice to understand that backslashes need an escape sequence.
         System.out.println("  _______");
         System.out.println(" /       \\");
         System.out.println("/         \\");
