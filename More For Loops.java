@@ -8,15 +8,20 @@ _-^-_-^-_-^-_-^-_-^-_-^-_-^-_-^-_-^-_-^-
 
 */
 
+//No methods are allowed, so the first and last for loops are the same.
+//1st for loop - Prints out the first line of dashes.
 for (int i = 0; i < 40; i++){
     System.out.print("-");
 } System.out.println();
 
+//2nd for loop - prints out the repeating ASCII mountain structure.
 for (int i = 0; i < 10; i++){
     System.out.print("_-^-");
 } System.out.println();
 
+//3rd for loop - prints out a sequence of numbers.
 for (int i = 1; i < 21; i++){
+    // Because the same number appears twice, the print stateent is duplicated.
     System.out.print(i%10);
     System.out.print(i%10);
 } System.out.println();
@@ -48,16 +53,25 @@ Size 7 -
 */
 
 public class SlashFigure {
+    //SIZE variable determines how big the strucure should be.
     public static final int SIZE = 4;
     public static void main(String[] args){
+        /* Parent for loop repeats for the number of lines on the ASCII art,
+        which is equal to the size of the art. */
         for (int i = 0; i < SIZE; i++){
+            /* neededExclamation determines how many ! appear per line;
+            decreases by 4 each repetition. */
             int neededExclamation = (SIZE - i) * 4 - 2;
+            //Prints out the beginning backslashes per line.
             for (int j = 0; j < i; j++){
+                //4 back spcaces are used instead of two because of escape sequencing.
                 System.out.print("\\\\");
             } 
+            // Prints out the exclamations marks after the backslashes.
             for (int j = 0; j < neededExclamation; j++){
                 System.out.print("!");
             }
+            // Prints out the front slashes at the end of each line.
             for (int j = 0; j < i; j++){
                 System.out.print("//");
             }
@@ -69,19 +83,25 @@ public class SlashFigure {
 /*
 Use for loops to create the following output:
 
-|         |         |         |         |         |
+         |         |         |         |         |         |
 123456789012345678901234567890123456789012345678901234567890
 
 */
 
+//Repeats 6 times, for each pipe character.
 for (int i = 0; i < 6; i++){
+    //Between each pipe character are nine spaces, created by the for loop below.
     for (int j = 0; j < 9; j++){
         System.out.print(" ");
     }
+    //After the spaces, a pipe character is printed.
     System.out.print("|");
 }
 System.out.println();
+/* 60 characters are present in total in the number line. This was determined
+by 6 pipe characters and 6*9 spaces. 6*9 + 6 = 6*10 = 60. */
 for (int i = 1; i <= 60; i++){
+    //Modulo helps with repetition in sequences.
     System.out.print(i%10);
 }
 
