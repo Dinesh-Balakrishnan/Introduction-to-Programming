@@ -1,4 +1,4 @@
-/*
+/*                              PROBLEM:
 Use only for loops to produce the following output:
 
 ----------------------------------------
@@ -30,7 +30,7 @@ for (int i = 0; i < 40; i++){
     System.out.print("-");
 }
 
-/*
+/*                              PROBLEM:
 Create a class called SlashFigure that uses one public static final constant
 to create an ASCII art that depends on the value of the constant. A couple of
 size examples are shown:
@@ -80,7 +80,7 @@ public class SlashFigure {
     }  
 }
 
-/*
+/*                              PROBLEM:
 Use for loops to create the following output:
 
          |         |         |         |         |         |
@@ -105,7 +105,7 @@ for (int i = 1; i <= 60; i++){
     System.out.print(i%10);
 }
 
-/*
+/*                              PROBLEM:
 Create a method called printNumbers that accepts a number as a parameter and
 produces the following sequence of outputs depending on the number. Assume
 that the values passed to the method are greater than or equal to 1.
