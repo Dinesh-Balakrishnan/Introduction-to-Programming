@@ -1,4 +1,4 @@
-/*
+/*                              PROBLEM:
 Create a class called MickeyBox that creates an image with the following specifications:
 - The window is 220 pixels wide and 150 pixels tall.
 - The background is yellow.
@@ -30,7 +30,7 @@ public class MickeyBox {
     }
 }
 
-/*
+/*                              PROBLEM:
 Create a class called ShowDesign that creates an image with the following specifications:
 - The window is 200 pixels wide and 200 pixels tall.
 - The background is white and the foreground is black.
@@ -57,7 +57,7 @@ public class ShowDesign{
     }
 }
 
-/*
+/*                              PROBLEM:
 Create a class called Squares that creates an image with the following specifications:
 - The drawing panel is 300 pixels wide by 200 pixels high.
 - The background is cyan.
@@ -89,7 +89,7 @@ public class Squares {
     }
 }
 
-/*
+/*                              PROBLEM:
 Create a class called Triangle that creates an image with the following specifications:
 - The drawing panel is 600 pixels wide by 200 pixels high.
 - The background is yellow.
