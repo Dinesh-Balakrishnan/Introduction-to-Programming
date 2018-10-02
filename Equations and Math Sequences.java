@@ -1,4 +1,4 @@
-/* PROBLEM:
+/*                              PROBLEM:
 Write a method called printPowersOf2 that prints each power from 2^0 to the
 maximum inputted power. The exponent passed to printPowersOf2 will be 0 or
 greater.
@@ -22,7 +22,7 @@ public static void printPowersOf2(int power){
     }
 }
 
-/* PROBLEM:
+/*                              PROBLEM:
 Write a method called printPowersOfN that takes in a base (N) and exponent.
 Then the method should print each power from N^0 to the maximum inputted power.
 The exponent passed to printPowersOfN will be 0 or greater.
@@ -48,7 +48,7 @@ public static void printPowersOfN(int power, int length){
     }
 }
 
-/* PROBLEM:
+/*                              PROBLEM:
 Write a variable that stores the equation below by only using 4 * operators and
 no methods from the Math class:
 
@@ -59,7 +59,7 @@ y = 12.3x^4 - 9.1x^3 + 19.3x^2 - 4.6x + 34.2
 //Simple case of factorization solves the problem.
 double y = 34.2+x*(-4.6+x*(19.3+x*(-9.1+12.3*x)));
 
-/* PROBLEM:
+/*                              PROBLEM:
 Write a method called cylinderSurfaceArea that takes in the radius and height
 of a cylinder and returns its surface area.
 */
@@ -69,7 +69,7 @@ public static double cylinderSurfaceArea(double radius, double height){
     return 2 * Math.PI * radius * (radius + height);
 }
 
-/*
+/*                              PROBLEM:
 Write code that uses a for loop to print out the first 12 Fibonacci numbers.
 */
 
