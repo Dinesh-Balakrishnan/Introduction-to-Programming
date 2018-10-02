@@ -1,4 +1,4 @@
-/*
+/*                              PROBLEM:
 Write a for loop that produces the following output without the * operator:
 
 1 4 9 16 25 36 49 64 81 100
@@ -15,7 +15,7 @@ for (int i = 0, j = 0; i < 10; i++){
     System.out.print(j + " ");
 }
 
-/*
+/*                              PROBLEM:
 Write for loops that produces the following output:
 
 *
@@ -34,7 +34,7 @@ for (int i = 1; i <= 5; i++){
     System.out.println();
 }
 
-/*
+/*                              PROBLEM:
 Write for loops that produces the following output:
 
 1
@@ -55,7 +55,7 @@ for (int i = 1; i <= 7; i++){
     System.out.println();
 }
 
-/*
+/*                              PROBLEM:
 Write for loops that produces the following output:
 
     1
@@ -78,7 +78,7 @@ for (int i = 1; i <= 5; i++){
     System.out.println();
 }
 
-/*
+/*                              PROBLEM:
 Write a method called printDesign using for loops that produces
 the following output (no parameters allowed):
 
