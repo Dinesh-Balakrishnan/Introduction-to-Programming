@@ -91,3 +91,31 @@ for (int i = 0; i < 12; i++){
     // Thanks to temp, num adds the previous number, not the modified num2 value.
     num += temp;
 }
+
+/*                              PROBLEM:
+Write a method called quadratic that solves quadratic equations by using a
+quadratic formula and prints out their two roots.
+*/
+
+public static void quadratic(double a, double b, double c) {
+    // squareRoot is equal to sqrt(b^2 - 4ac).
+    double squareRoot = Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+    //addRoot is equal to the entire equation, with adding the squareRoot.
+    double addRoot = (-b + squareRoot) / (2 * a);
+    //subtractRoot is equal to the entire equation, with subtracting the squareRoot.
+    double subtractRoot = (-b - squareRoot) / (2 * a);
+    System.out.println("First root = " + addRoot);
+    System.out.println("Second root = " + subtractRoot);
+}
+
+/*                              PROBLEM:
+Write a method called distances that accepts four integer coordinates: x1, y1,
+x2, and y2 in that sense that x1 and y1 are a coordinate pair along with
+x2 and y2 being the other. Using these two pairs, determine the distance
+between them.
+*/
+
+public static double distance (int x1, int y1, int x2, int y2){
+    //Simply returns the value of the distance formula.
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+}
