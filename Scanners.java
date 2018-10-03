@@ -1,4 +1,4 @@
-/*
+/*                             PROBLEM:
 Write a static method called longestName that reads names typed by the user
 and prints out the longest name. The method should accept a Scanner method
 and and integer representing the number of names to check from. Despite the
@@ -55,7 +55,7 @@ public static void longestName(Scanner console, int names) {
                        longestName.substring(1).toLowerCase() + "'s name is longest" + extraPhrase);
 }
 
-/*
+/*                             PROBLEM:
 Write a method named smallestLargest that asks the user to enter numbers, then
 prints the smallest and largest of all the numbers typed in by the user.
 The user will enter a valid number greater than 0 for the number of numbers
