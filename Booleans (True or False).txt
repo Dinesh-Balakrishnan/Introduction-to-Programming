@@ -1,0 +1,25 @@
+Given that ...
+
+int x = 4;
+int y = -3;
+int z = 4;
+
+... evaluate the following expressions:
+
+x == 4	                        | Answer: true
+
+x == y                          | Answer: false
+
+x == z                          | Answer: true
+
+y == z                          | Answer: false
+
+x + y > 0                       | Answer: true
+
+x - z != 0                      | Answer: false
+
+y * y <= z                      | Answer: false
+
+y / y == 1                      | Answer: true
+
+x * (y + 2) > y - (y + z) * 2   | Answer: true
