@@ -2,8 +2,8 @@
 
 * [Redundancy and Escape Sequences](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/Redundancy%20and%20Escape%20Sequences.java)
 * [Equations and Mathematical Sequences](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/Equations%20and%20Math%20Sequences.java)
-* [Scanners](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/Scanners.java)
 * [String Manipulation](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/String%20Manipulation.java)
+* [Scanners](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/Scanners.java)
 * [Drawing Panel](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/DrawingPanel.java)
 * [For Loops](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/For%20Loops.java)
 * [Extra For Loops](https://github.com/Dinesh-Balakrishnan/Programming-Basics/blob/master/More%20For%20Loops.java)
