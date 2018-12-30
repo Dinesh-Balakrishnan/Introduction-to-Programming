@@ -17,8 +17,8 @@ public class Lesson7 {
 		//To create an object, use the following syntax: Type objectName = new Type(opt. parameters);
 		DrawingPanel panel = new DrawingPanel(200, 100);
 
-    //To call upon a static variable, use the following syntax: className.variableName;
-    Color red = Color.RED;
+    		//To call upon a static variable, use the following syntax: className.variableName;
+    		Color red = Color.RED;
 
 		//To call upon a method in the created object, use the following syntax: objectName.methodName(opt. parameters);
 		Graphics graphics = panel.getGraphics(); //Automatically creates new object.
