@@ -45,7 +45,7 @@
 
 * [Notes](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson11.java)
 
-### While and Do-While Loop
+### The While and Do-While Loops
 
 * [Notes](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson12.java)
 
