@@ -6,6 +6,9 @@ DEFINITIONS:
 
 	- Value Semantics: When primitive variables such as ints are passed as variables, their values are copied.
 		-- This means that when the respective parameter variable is modified, no change occurs to the variable passed in.
+		
+	- Reference Semantics: When objects are passed as variables, another variable references to the same object.
+		-- No data is copied; the same object passed in is altered.
 
 	- Parameter: A value that distinguishes similar tasks.
 
