@@ -15,7 +15,7 @@
 * [Methods, Value Semantics, and Reference Semantics](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson6.java)
 
 * [Creating and Using Objects (DrawingPanel Class)](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson7.java)
-** [DrawingPanel Source Code](http://www.buildingjavaprograms.com/DrawingPanel.java)
+  * [DrawingPanel Source Code](http://www.buildingjavaprograms.com/DrawingPanel.java)
 
 * [Using the Math Class and Primitive Type Casting](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson8.java)
 
@@ -44,7 +44,7 @@
 * [Two Dimensional Arrays](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson20.java)
 
 * [Object-Oriented Programming](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson21.java)
-** [Point.java (Notes)](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Point.java)
+  * [Point.java (Notes)](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Point.java)
 
 * [Encapsulation and Constructors](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson22.java)
 
