@@ -1,0 +1,62 @@
+/*The below selector is used to add fonts into a CSS document that may not necessarily be
+  installed on a user's computer. */
+@font-face {
+  /*All of this data is received by pasting the url created by Google Fonts into the browser
+    and getting the content under the latin comment. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono'), local('SpaceMono-Regular'), url(https://fonts.gstatic.com/s/spacemono/v1/adVweg3BJhE6r8jYmXseHQzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*Multiple fonts can be added with many @font-face properties. */
+@font-face {
+  font-family: "Glegoo";
+  src: url(../fonts/Glegoo-Regular.ttf) format('truetype');
+  /*Direct paths can also be specified, with including the type of document being used as a parameter.*/
+}
+
+.textStyling {
+  /*In case that a specified font isn't installed on a computer, fallback fonts can be used. */
+  font-family: "Garamond", "Times", serif;
+  /*If Garamond isn't installed, Times is used. If Times isn't installed either, any serif font is used. */
+
+  /*Aside from the named font weights, values incremented by 100 from 100 to to 900 are allowed. */
+  font-weight: 300; /* Default: 400, Light: 300, Bold: 700 */
+
+  /*The font can be italicized by using font-style */
+  font-style: italic; /*oblique is another style type that tilts the text. */
+
+  /*The spaces between words can be changed with the word-spacing property. */
+  word-spacing: 0.3em; /*Default is 0.25em; em is a relative sizing unit*/
+
+  /*Just like word-spacing, letter-spacing also exists. */
+  letter-spacing: 0.35em;
+
+  /*The text can all be made uppercase or lowercase with the text-transform property. */
+  text-transform: lowercase;
+  text-transform: uppercase;
+
+  /*Lastly, the line height can be changed by using a unitless number for the line-height property. */
+  line-height: 1.4; /*The value will automatically scale with the font size. */
+}
+
+.colors {
+  /*The most basic way to choose the color of an element is to use keyword colors. */
+  color: rebeccapurple;
+
+  /*Colors can also be described in hexadecimal: */
+  background-color: #ff96ff; /* ff represents R, 96 represents G, ff represents B */
+
+  /*Another way is to represent them using rgb values in normal decimal format: */
+  border: solid rgb(72, 61, 139); /* Parameters values are between 0 and 255. */
+
+  /*Lastly, colors can also be represented through the hsl format: */
+  color: hsl(201, 5%, 50%); /* First parameter is a degree value */
+
+  /*The letter a can be added to the rgb and hsl format, with a 4th parameter of alpha.
+    This value represents opacity, with 1 being opque and 0 being transparent. */
+  color: rgba(123, 44, 78, 0.5);
+  color: hsla(144, 50%, 72%, 1);
+}

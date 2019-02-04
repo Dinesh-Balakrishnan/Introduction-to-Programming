@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+DEFINITIONS:
+
+  - Metadata: Information about a page that isn't directly displayed on the page.
+
+  - HyperText: Text displayed on a computer or device that provides access to other text through hyperlinks.
+
+-->
+<html>
+  <!--The head tag contains the metadata about a webpage. -->
+  <head>
+    <!--The title tag will display the text that appears on the browser's window -->
+    <title>Practice</title>
+  </head>
+
+  <!-- All elements can be specifically targeted by giving themselves an identification using the id
+  and/or class attribute -->
+  <body class="content head"> <!--Many elements can be given the same class. -->
+    <!--Notice how the body has two classes assigned to it: 'content' and 'head'. -->
+
+    <div class="content" id="top"></div> <!--Alternatively, only one element can be given a particular ID. -->
+
+    <!--The a tag provides hyperlinks to other pages through the href attribute. -->
+    <a href="https://en.wikipedia.org/wiki/Brown_bear">Learn more.</a>
+    <!--The 'Learn more.' statement will turn into hypertext that links to the specified wiki page. -->
+
+    <!--The link can be opened in a new window instead of a new tab if needed: -->
+    <a href="www.google.com" target="_blank">Opens in a new window.</a>
+
+    <!-- NOTE: Most of the time, it is possible to link to a relative file location rather than a webpage. -->
+    <a href="./1.html">To the previous lesson</a>
+
+    <!-- Most elements, such as images, can be connected to a hyperlink. -->
+    <a href="./3.html"><img src="https://www.publicdomainpictures.net/pictures/130000/velka/multi-color-pattern-background.jpg"/></a>
+
+    <!--It is possible to traverse across a page by referencing to elements of interest. -->
+    <a href="#top"> Back to top.</a> <!-- Goes to the element that has an id of top, which is the body element. -->
+  </body>
+</html>

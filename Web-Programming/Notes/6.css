@@ -1,0 +1,63 @@
+/*All child elements of a parent element that has a display of flex or inline-flex are flex
+  items. The parent element is the flex container. */
+.container {
+  display: flex;
+  display: inline-flex;
+  width: 200px; /*Without a designated width. the flex items of an inline-flex container
+                  will expand to fit the entire line. */
+
+  /*'justify-content' is used to position child elements horizontally. */
+  justify-content: center; /*Centers content with no added spacing between them. */
+  justify-content: flex-end; /*Aligns content to the right with no added spacing between them. */
+  justify-content: flex-start; /*Aligns to teh left with no added spacing between them. */
+  justify-content: space-around; /*Spaces content with equal space before and after each item. */
+  justify-content: space-between; /*Spaces content will equal space between each item. */
+
+  /*'align-items' is used to position child elements vertically in the same line. */
+  align-items: baseline; /*The baseline of the child elements are aligned. */
+  align-items: center; /*Elements are centered halfway between the top and bottom of the container. */
+  align-items: flex-end; /*Child elements are aligned with the bottom of the container. */
+  align-items: flex-start; /*Child elements are aligned with the start of the container. */
+  align-items: stretch; /*Elements without a specified height will strech to the height of the container. */
+
+  /*'flex-wrap' is used to let content move to different lines instead of shrinking to the flex container. */
+  flex-wrap: nowrap; /*Default value, flex items shrink. */
+  flex-wrap: wrap; /*Items near the end move to the bottom line. */
+  flex-wrap: wrap-reverse; /*Items, excluding those near the end, move to the bottom line. */
+
+  /*If a flex container has multiple rows, 'align-content' should be used instead of 'align-items'. It
+    has the same properties of 'justify-content' with an extra property of strech. */
+  align-content: stretch; /*If no height is specified, elements will strech to fill the parent container from top to bottom. */
+
+  /*The direction of content flow can be changed with the 'flex-direction' property. */
+  flex-direction: row; /*Default value. Content flows from left to right. */
+  flex-direction: row-reverse; /*Content flows from right to left. */
+  flex-direction: column; /*Content flows from top to bottom. */
+  flex-direction: column-reverse; /*Content flows from bottom to top. */
+
+  /*'flex-flow' declares both 'flex-direction' and 'flex-wrap' respectively in the same property. */
+  flex-flow: column wrap;
+}
+
+/*If the .container parent has a display property of flex, the individual child elements will
+  continue on the same line and shrink to fit the flex container. */
+
+.container .item1 {
+  flex-grow: 2; /*If the parent container grew by 60px, .item1 would grow by 40px. */
+
+  flex-shrink: 2 /*Same case applies, with .item1 shrinking faster than .item2. */
+
+  /*Before shrinking and growing, child elements can be set to a default width. */
+  flex-basis: 150px;
+
+  /*Instead of specified all 3 individually, they can be set with the flex property.
+    Format: flex-grow flex-shrink flex-basis */
+  flex: 2 2 150px; /*The flex-shrink property doesn't have to be spcecified. */
+}
+
+.container .item2 {
+  flex-grow: 1; /*If the parent container grew by 60px, .item2 would grow by 20px. */
+
+  /*If the parent container shrunk, .item2 would shrink because flex-shrink has a default value
+    of 1. */
+}

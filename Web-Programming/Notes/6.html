@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!--
+DEFINITIONS:
+
+  - Boilerplate Code: Code that can be reused with little to no modification.
+
+  - CDN: Also known as a Content Delivery Network, CDNs are a group of servers that
+    are spread out over many locations that store duplicate copies of data so that
+    servers can load content faster.
+      - Often used to deliver stylesheets and JavaScript files of libraries.
+
+  - Framework: An abstraction in which software providing generic functionality can be changed
+    by additional user-written code.
+-->
+
+<html>
+  <head>
+    <!--To import the Handlebars library from a CDN: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.amd.min.js"
+    integrity="sha256-LRZxKfU/uAO/CkyJjJTCMZphrNZ7qyqTkydAhgv3sQ0=" crossorigin="anonymous"></script>
+
+    <!--To create a Handlebars script: (Handlebar scripts are enclosed within '{{' and '}}')-->
+    <script id ='example' type='text/x-handlebars-template'>
+      <!--Text can be placed into HTML scripting by using object properties. -->
+      <p>{{greeting}}</p>
+
+      <!--If/Else Conditional (Else isn't required) -->
+      {{#if opinion}}
+        <p>"The correct way to say GIF is GIF!"</p>
+      {{else}}
+      	<p>"There's no right way to say GIF!"</p>
+      {{/if}}
+
+      <!--Each loop -->
+      {{#each positionArray}}
+        <p>{{this}} is the current element!</p>
+      {{/each}}
+
+      <!-- Each Loop while accessing element properties. -->
+      {{#each shapeArray}}
+        <p>{{this.shape}}</p>
+      {{/each}}
+
+    </script>
+  </head>
+
+  <body>
+    <div id='hello'></div>
+  <body>
+
+  <!--To replace Handlebar expressions with values in JavaScript: -->
+  <script defer>
+    //1. Create an object with property values respective to the handlebar expressions.
+    const context = {
+	    greeting: 'Hello World!',
+      opinion: true,
+      positionArray: ['First', 'Second', 'Third'],
+      shapeArray: [ {shape: 'Triangle'}, {shape: 'Circle'}, {shape: 'Square'}]
+    }
+    //2. Get the HTML value of the Handlebar script.
+    const source = document.getElementById('example').innerHTML;
+    //3. Convert the HTML into a Handlebars template.
+    const template = Handlebars.compile(source);
+    //4. Compile the Handlebars template with the object values to get the actual HTML.
+    const compiledHtml = template(context);
+    //5. The innerHTML of other elements can be changed with the compiled template.
+    document.getElementById('hello').innerHTML = compiledHtml;
+  </script>
+</html>

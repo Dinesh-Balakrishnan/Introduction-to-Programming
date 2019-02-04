@@ -1,0 +1,71 @@
+/*Media selectors can be used to target different screen sizes, and alter the website for each. */
+@media only screen and (min-width: 320px) {
+  /*This selector will only be used if the scree size is >= 320px or < 560px. */
+  body {
+    font-size: 12px;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 560px) and (orientation: landscape) {
+  /*This selector will only be used if the screen size is > 560 px and the device is in landscape mode */
+  body {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+
+/*Alternatively, this media selector targets devices with resolutions greater than 300 dots per inch,
+  or that have a small screen size. */
+@media only screen and (max-resolution: 300dpi), (max-width: 319px)  {
+  body {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/27/23/11/background-2687925_960_720.jpg");
+  }
+}
+
+/*Good list of breakpoints: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/screen-sizes.png */
+
+html {
+  font-size: 24px;
+}
+
+/*Child of the body element */
+.relativeSizing {
+  /*em is a value type that scales depending only on its parent's font size.*/
+  width: 2em;
+  /*em is a scaling value. If the body font-size is 12px, the width is 24px. If the body font-size is 18px,
+    the width is 36px. */
+
+  /*rem scales only depending on the font size of the root element, which is covered by
+    the html selector. */
+  height: 1.5rem;
+  /*Because the html element has a font size of 24px, the height is 24 * 1.5 = 36px. */
+
+  /*% is a value type that scales depending on the parent value of the specified property. */
+  padding: 50%;
+  /* % is also a scaling value type. If the body width is 30px, the width of .relativeSizing is 15px.
+    It it's 40px, the width is 20px. */
+
+    /*It is possible to limit how large or small an element can get. */
+    min-height: 50px;
+    max-height: 300px;
+    min-width: 100px;
+    max-width: 400px;
+}
+
+/*The .container selector sets the size of an image container. The set height won't scale, but the width will. */
+.container {
+  width: 50%;
+  height: 200px;
+  /*The overflow property is set for the actual image. If the image is larger than the container, the extra
+    parts will be hidden from view.*/
+  overflow: hidden;
+}
+
+.container img {
+  /*The max-width property ensures that the image takes the full width of the container. */
+  max-width: 100%;
+  /*By setting the height to auto, the height scales with the width. */
+  height: auto;
+  display: block;
+}

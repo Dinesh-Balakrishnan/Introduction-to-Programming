@@ -1,0 +1,65 @@
+/*
+DEFINITIONS:
+
+  - Specificity: The order by which the browser decides which CSS styles will be displayed.
+    -- IDs are the most specific selector, followed by classes, then tags. The CSS properties of
+       the more specific selector will override any similar CSS properties of the less specific selector.
+    -- Chained selectors are more specific than their unchained counterparts.
+
+*/
+
+/*CSS can target elements by using their tag name (p, body, a, etc.) */
+p { /*The targeted element is known as a selector. In this case, p is the selector. */
+
+  /*To set the size of text from the default font size of 16px: */
+  font-size: 18px;
+
+  /* To set the font of text from the default typeface of Times New Roman: */
+  font-family: "Garamond";
+  /*NOTE: The font specified in the stylesheet must be installed on the user's computer. */
+  /*NOTE: It is good practice to limit the number of typfaces used in a website to 3. */
+
+  /*To change how bold or thin text appears: */
+  font-weight: bold; /*Other properties: lighter, normal, bolder */
+
+  /*To change how text aligns to a page: */
+  text-align: right; /*Other properties: left, center, justify (Equal width)
+
+  /*To change the foreground color of elements (Such as changing text color): */
+  color: blue;
+
+  /*To change the background color of elements: */
+  background-color: orange;
+
+  /*To change the opacity of an element (How transparent it is): */
+  opacity: 0.75; /*1 represents fully visible and opaque, while 0 represents fully invisible */
+
+  /*To set the background of an element to an image: */
+  background-image: url("https://www.publicdomainpictures.net/pictures/130000/velka/multi-color-pattern-background.jpg");
+
+}
+
+/*Elements can also be targeted by their specified class by including '.' before the class name. */
+.content { /*All elements with a class attribute of content will be selected. */
+  color: maroon !important; /*Just dont use '!important'. Specificity raised to the max.
+}
+
+/*Elements can even be targeted by their specified id by including '#' before the id name. */
+#outline { /*The single element with an id attribute of outline will be selected. */
+
+}
+
+/*It is possible to chain selectors to target even more specific elements. */
+h2.content { /* Only h2 headers with a class of content will be selected. */
+
+}
+
+/*It is also possible to target nested elements. */
+#outline li { /* All list elements nested within the tag with the id "outline" will be selected. */
+
+}
+
+/*It is possible to add CSS to multiple selectors at once. */
+ol, body.outline {
+
+}

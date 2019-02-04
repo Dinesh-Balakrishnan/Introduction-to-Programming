@@ -1,0 +1,88 @@
+/*
+DEFINTIONS:
+
+  - Box Model: The default composition of a webpage, involving each element wrapped
+    wrapped within a box container.
+
+  - Padding: The area between the content and the border of the box container.
+
+  - Margin: The space between the border and the outside edge of the box container.
+
+  - User Agent Stylesheet: Already contained within the browser, the stylesheet contains the
+    default CSS property values for the HTML elements.
+
+*/
+
+/*Covers the syntax of changing element style under the default box model. */
+.boxModel {
+  /* Setting up the height and width of content is quite straightforward: */
+  height: 80px;
+  width: 240px;
+
+  /*The syntax for creating a border is 'border: width style color;', with all 3 of the
+  values (width, style, and color) being optional. The default border is medium none color. */
+  border: 3px solid coral;
+  /*Width Values: (num)px, thin, medium, thick
+    Style Values: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+    Color Values: Similar to the color property. */
+
+  /*The border-radius property curves the corners of the box model. */
+  border-radius: 5px; /*Corners are set to a radius of 5 pixels.*/
+  /*Setting the border-radius equal to the box height (100%), will make the border circular. */
+
+  /*Padding has many forms of syntax, the first being setting each side to a certain padded value. */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /*Setting values by using just the padding value: */
+  padding: 10px 5px 7px 9px; /*Top: 10px, Right: 5px, Bottom: 7px, Left: 9px */
+  padding: 10px 5px; /*Top, Bottom: 10px, Right, Left: 5px */
+  padding: 10px; /* All sides 10px
+
+  /*Margin follows the exact same syntax as padding, just differs in functionality. */
+  margin: 20px;
+  /*NOTE: The top and bottom margins between elements collapse.
+
+  /*The auto keyword is a very helpful keyword that differs depending on the function is passed into: */
+  /*With the margin property, the specified sides' margins will grow until the element is centered. */
+  margin: 20px auto; /*Element is centered horizontally. */
+  /*With the height property, the height adjusts to the size of the content. */
+  height: auto; /*The height is equal to the natural height of its element. */
+
+  /*It is possible to hide an element from view, but still have the space reserved for it. */
+  visibility: hidden;
+  visibility: visible; /*Default value of an element. */
+}
+
+.boxModel .overflow{
+  height: 90px;
+  width: 240px;
+
+  /*The parent element that has the class .boxModel only has a height of 80px. As a result,
+    there is extra content within this child element. The overflow property deals with this: */
+  overflow: visible; /*Default value, displays extra content outside of the parent. */
+  overflow: scroll; /*A scroll bar will be added to the content box. */
+  overflow: hidden; /*The extra content is hidden from view. */
+}
+
+/*This tag is a selector for the user agent stylesheet of the browser. */
+* {
+  font-family: "cursive";
+  /*Text that doesn't have a specified font-family property will be in the cursive font. */
+}
+
+/*The content box model is the default model. The size equation is:
+  box size = element height and width + padding + border width*/
+.borderBox {
+  /* The border box doesn't increase in size due to the padding and border properties */
+  box-sizing: border-box;
+
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  /*The larger the border and padding values are, the smaller the content area.
+    As a result: box size = element height and width */
+}

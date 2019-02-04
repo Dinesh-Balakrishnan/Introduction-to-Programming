@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--To import the jQuery library from a CDN: -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class='parent'>
+      <img src="https://picsum.photos/200/300/?random" alt="Random Image 1">
+      <img src="https://picsum.photos/200/300/?random" alt="Random Image 2">
+      <img src="https://picsum.photos/200/300/?random" alt="Random Image 3">
+    </div>
+    <div class='parent'>
+      <p id ='child'>Child <span>1</span></p>
+      <p>Child <span>2</span></p>
+      <p>Child <span>3</span></p>
+    </div>
+  </body>
+
+  <script>
+    /*The .ready method makes sure the DOM is ready to manipulate. All code should be placed
+      within the method. */
+    $(document).ready(() => {
+      elementsAndEventHandlers();
+      css();
+
+      function elementsAndEventHandlers() {
+        //In order to target elements as jQuery objects (All elements are targeted):
+        let $photos = $('img'); //It is good pratice to put $ in front of jQuery variables.
+
+        //To target elements using hierarchical relationship:
+        let $children = $('.parent').children();
+        let $parent = $('#child').parent();
+        let $siblings = $('#child').siblings();
+        let $nextSibling = $('#child').next();
+        let $selectedChildren = $('.parent').find('#child');
+        //Closest will select the element that is closest when traveling up the tree with the desired selector.
+        let $closestClass = $('#child').closest('.parent'); //Selects the div with nested p elements.
+
+        //jQuery event handler:
+        $photo.on('mouseenter', event => {
+          //To target only the current element: $(event.currentTarget)
+          $(event.currentTarget).hide();
+        }).on('mouseleave', event => { //Notice that these event handlers can be chained.
+          $(event.currentTarget).show();
+        });
+        /*NOTE: mouseenter doesn't trigger when entering child elements, while mouseover does. This
+          is the same difference between mouseleave and mouseout respectively. */
+      }
+
+      function css() {
+        let $photos = $('img');
+
+        //Non-Animated jQuery spacial methods:
+        $photos.show();
+        $photos.hide();
+        $photos.toggle(); //Toggles between hidden and shown.
+
+        //Animated jQuery spacial methods:
+        $photos.fadeIn(); //FadeIn functions like .show(), but with an animation.
+        $photos.fadeIn(1000); //Optional integer millisecond parameter.
+        $photos.fadeToggle(); //Toggles between fading in and fading out.
+        $photos.slideDown(); //slideDown functions like .show(), but with an animation.
+        $photos.slideUp('slow'); //Optional String parameter.
+        $photos.slideToggle(); //Toggles between sliding up and down.
+
+        //To add CSS to elements:
+        $photos.css('backgroundColor', '#FFFFFF');
+        $photos.css({
+          backgroundColor: '#000000',
+          height: '1000px'
+        });
+        //Classes can be added/removed to elements for styling from additional/less selectors.
+        $photos.addClass('example-class');
+        $photos.removeClass('example-class');
+        $photos.toggleClass('example-class');
+
+        //Elements can also be animated to change in CSS over time:
+        $photos.animate({
+          height: '100px',
+          width : '100px',
+          borderWidth : '10px'
+        });
+      }
+    });
+  </script>
+</html>

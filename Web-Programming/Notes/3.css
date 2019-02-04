@@ -1,0 +1,52 @@
+.position {
+  /*An element has a default position of static. Such an element cannot be affected by
+    offset properties and is positioned according to the normal flow of the page */
+  position: static;
+
+  /*An element that has a relative position starts off at its static position, but it can
+    be adjusted relative to the static position using offset properties. */
+  position: relative;
+  top: 15px;
+  left: 40px;
+
+  /*An element that has an absolute position starts off at the top left corner of the
+    parent element and is ignored by other elements. It can also be adjusted using offset properties. */
+  position: absolute;
+  bottom: 10px;
+  right: 2px;
+
+  /*A fixed element has the same properties of an element with an absolute position, but the
+    element doesn't scroll with the rest of the page. */
+  position: fixed;
+
+  /*Multiple elements may collide with one another when using these display positions. In order to
+    make sure that a certain element is in front of the other when they collide, the z-score property exists. */
+  z-index: 2;  /*This element will overlap elements with a default z-score of 1. */
+  /*NOTE: Only integer values are accepted */
+}
+
+.display {
+  /*Elements that have a display of inline do not have a height or width value, and will take up enough
+    space that will allow them to be displayed. Inline elements will be rendered on the same line as
+    other inline elements. */
+  display: inline;
+
+  /*Elements that have a display of block take up the full width of their parent elements and
+    stack from top to bottom with other block elements. */
+  display: block;
+
+  /*Elements that have a display of inline-block have the same properties as inline elements,
+    except they can have a width and a height assigned to them. */
+  display: inline-block;
+
+  /*When dealing with inline elements, it may be necessary to organize how these elements
+    appear on a page: */
+  float: left; /*Moves left until the end of the parent element has been reached or another element is encountered. */
+  float: right;
+
+  /*An element with the clear property moves down the webpage if an element is encountered on its
+    specified side/s.*/
+  clear: left;
+  clear: right;
+  clear: both;
+}

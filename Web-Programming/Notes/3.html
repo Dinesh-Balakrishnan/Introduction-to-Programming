@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="lists">
+    <!--The ul tag is used to create an unordered list using bullet points. -->
+    <ul>
+      <li>Dog</li> <!--To add elements to a list, just use the list element: li. -->
+      <li>Cat</li>
+      <li>Turtle</li>
+    </ul>
+
+    <!--Alternatively, the ol tag is used to create an ordered list using numbers. -->
+    <ol>
+      <li>Preheat the oven to 350 degrees.</li>
+      <li>Mix whole wheat flour, baking soda, and salt.</li>
+      <li>Cream the butter, sugar in separate bowl.</li>
+      <li>Add eggs and vanilla extract to the bowl.</li>
+    </ol>
+
+    <!--The table tag is used to create a table -->
+    <table>
+    <!--The thead tag specifies the title section of the table. -->
+		<thead>
+    <!--The relative position of each tr tag specifies that row on the table. -->
+    <tr>
+      <!-- The relative position of each th tag corresponds to an element in each row. -->
+      <th scope="col">Company Name</th>
+      <th scope="col">Numbers of Items to Ship</th>
+      <th scope="col">Next Action</th>
+      <!-- The scope attributes specifies whether the header is for the row or column it is in. -->
+    </tr>
+    </thead>
+
+    <!--The tbody tag should contain all the main data present in the table. -->
+    <tbody>
+
+    <!--Because this tr tag is second, it corresponds to the second row.-->
+    <tr>
+      <!--The rowspan attribute can be used to specify how many rows an element should take up. -->
+      <td rowspan="2">Adam's Greemworks</td>
+      <!--The td element functions exactly like the th element, except for it contains data rather than a title. -->
+      <td>Package Items</td>
+      <td>14</td>
+    </tr>
+
+    <tr>
+      <!--Because the last row has an element that has a rowspan of 2, the next row must be adjusted. -->
+ 		 <td>Send Invoice</td>
+     <td>2</td>
+		</tr>
+
+		<tr>
+ 		 <td>Baker's Bike Shop</td>
+     <td>Send Invoice</td>
+ 		 <td>44</td>
+		</tr>
+
+		<tr>
+ 		 <td>Miss Sally's Southern</td>
+ 		 <td>Ship</td>
+ 		 <td>4</td>
+		</tr>
+
+		<tr>
+  		<td>Summit Resort Rentals</td>
+  		<td>Ship</td>
+ 		 <td>4</td>
+		</tr>
+
+		<tr>
+ 		 <td>Strike Fitness</td>
+  		<td>Enter Order</td>
+ 		 <td>1</td>
+		</tr>
+
+  </tbody>
+  <!--The tfoot element contains extrapolated information from the table. -->
+	<tfoot>
+    <tr>
+      <!--colspan works just like rowspan, except that it extends through columns instead. -->
+      <td colspan="2">Total</td>
+			<td>28</td>
+    </tr>
+  </tfoot>
+
+</table>
+
+  </body>
+</html>

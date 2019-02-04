@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+DEFINTIONS:
+
+  - CSS: Also known as Cascading Style Sheets, CSS is used to style HTML content on a webpage.
+
+  -Inline Style: CSS styling that is applied to a single element through the style attribute
+
+-->
+<html>
+  <head>
+    <!--The style tag can be used to add CSS directly to an HTML document.
+        It must be placed within the head element. -->
+    <style>
+    /*Example of CSS Code in CSS Syntax*/
+    p {
+    color: red;
+    font-size: 20px;
+    }
+    </style>
+
+    <!--The link element can be used to link necessary documents to an HTML file. In
+        most cases it is better to have the CSS in a separate .css file, which needs
+        to be linked to the current CSS document. -->
+    <link href="example.css" rel="stylesheet">
+    <!--The href attribute gets the path to the file, while the rel attribute describes
+        what type of file it is. -->
+
+    <!--The link element can also be used to link fonts to a webpage to prevent cases where the
+        user doesn't have the preferred font style installed. -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" type="text/css" rel="stylesheet">
+    <!--NOTE: Use Google Fonts to create the link element for the preferred font type. -->
+    </thead>
+  </head>
+
+  <!--The script tag can be placed on the top of the document with the defer attribute.
+      The script will then load after the page has been loaded. -->
+  <script src="example.js" defer></script> <!--script tag info at bottom of document -->
+
+  <!--The script tag can also have the async attribute. While the deferred script will load
+      after the HTML has loaded, the asynchronous script won't wait. -->
+  <script src="example.js" async></script>
+
+  <body>
+    <!--To use inline style, just add the style attribute to a tag. -->
+    <p style="color: red; font-size: 20px;" id="click">I'm learning to code!</p>
+    <!--As seen, the syntax is "style: setting;" for each style that needs to be changed. -->
+  </body>
+
+  <!--The script tag allows JavaScript to be added to a document directly. It is added
+      at the end of a document so that the rest of the HTML is loaded first by the HTML parser. -->
+  <script>
+    let text = document.getElementById('click');
+    text.onclick = () => text.innerHTML = "Look at that, even more knowledge.";
+  </script>
+
+  <!--Scripts can also be linked to the document by using the src attribute on script. -->
+  <script src="example.js"></script>
+
+</html>
