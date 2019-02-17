@@ -29,7 +29,7 @@
 
 * [Digital Storage Conversions and the Random Class](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson13.java)
 
-* [Boolean Zen and De Morgan's Law](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson14.java) 
+* [Boolean Zen, De Morgan's Law, and the Ternary Operator](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson14.java) 
 
 * [Reading Text Files (File and Scanner Class)](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson15.java)
 
