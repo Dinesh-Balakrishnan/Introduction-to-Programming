@@ -15,6 +15,8 @@ public class Lesson14 {
 		int exampleInt = 14;
 		boolean isEven = isEvenBAD(exampleInt);
 		isEven = isEvenGOOD(exampleInt);
+		
+		ternaryOperator();
 	}
 
 	public static void isTrueBAD(boolean isTrue) {
@@ -75,5 +77,19 @@ public class Lesson14 {
 		 	<  < --- > >=
 		 	== < --- > !=
 		 */
+	}
+	
+	public static String ternaryOperator() {
+		//The ternary operator checks whether a condition is true or false, and returns a respective value.
+		
+		//The returned value can be stored.
+		int example = true ? 4 : 9;
+		System.out.println(example); //Prints 4
+		
+		//The returned value can be directly used.
+		System.out.println(true ? 4 : 9); //Prints 4
+		
+		//As such, it can also be immediately returned.
+		return true ? "Hello" : "Goodbye";
 	}
 }
