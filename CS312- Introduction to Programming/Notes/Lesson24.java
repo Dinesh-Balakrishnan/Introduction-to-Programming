@@ -39,14 +39,15 @@ public class Lesson24 {
 		//Upcasting is casting an object to a parent type:
 		System.out.println(((Employee) example).employeeOnly); //Prints 99999
 
-		//Downcasting occurs when the example variable goes back to behaving as a LegalSecretary rather than an employee:
-		printType(example);
-
 		//It is not possible to physically downcast an object:
 		//printType ((Secretary) new Employee()); (SYNTAX ERROR)
+		
+		//Dowcasting works when the casted type is the original type of an object:
+		Employee hidden = new LegalSecretary();
+		((LegalSecretary) hidden).printType(); //Prints Legal Secretary
 	}
 
-	//Notice how the parameter is the generic object type, Employee
+	//All Employee objects and objects that are subtypes of the Employee class can be passed as parameters into this method.
 	public static void printType(Employee e) {
 		System.out.println(e.type);
 	}
@@ -66,4 +67,5 @@ class Secretary extends Employee {
 
 class LegalSecretary extends Secretary {
 	public LegalSecretary() {type = "Legal Secretary";}
+	public void printType() {System.out.println(type);}
 }
