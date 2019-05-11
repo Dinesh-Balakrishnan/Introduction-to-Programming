@@ -59,7 +59,7 @@ public class Lesson23 extends Lesson22 {
 		super.setId(id);
 	}
 
-	//When comparing object variables that are assigned to different objects, they will never be equal.
+	//When comparing two different objects, they will never be equal.
 	//There's a partial solution to this:
 	public boolean equal(Object obj) {
 		//Checks to see whether the other object is the same type as the instance parameter.
