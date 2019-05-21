@@ -14,7 +14,7 @@ public class Practice9 {
   sequence in any line reaches max, it wraps around back to min. You may assume the caller of the method will
   pass a min and a max parameter such that min is less than or equal to max.
 
-  Call	printSquare(1, 5); |	printSquare(3, 9); |	printSquare(0, 3); |	printSquare(5, 5);
+  Call  printSquare(1, 5); |	printSquare(3, 9); |	printSquare(0, 3); |	printSquare(5, 5);
                            |                     |                     |
   Output    12345          |       3456789       |         0123        |          5
             23451          |       4567893       |         1230        |
