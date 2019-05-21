@@ -55,7 +55,7 @@ public class Practice1 {
 	/* The repeatStatements method is created so that the the two repeating
     lines wouldn't be coded more than once.*/
 	public static void repeatStatements(){
-		System.out.println("||�Victory�is�mine!�||");
+		System.out.println("|| Victory is mine! ||");
 		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");
 	}
 }
