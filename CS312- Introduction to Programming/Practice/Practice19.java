@@ -64,7 +64,7 @@ public class Practice19 {
     for (int index = 1; index < length; index++) {
         //If the current number isn't greater than or equal to the previous number, the list isn't sorted.
         if (!(nums[index] >= nums[index - 1])) {
-            return false;
+            return false;
         }
     }
     //If the all numbers in the array are greater than or equal to the previous element, the list is sorted.
