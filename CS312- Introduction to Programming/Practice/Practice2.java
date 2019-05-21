@@ -78,16 +78,16 @@ public class Practice2 {
 		/* Because a bulk appears before every "X" shape,
 	        the starBulk method has been called. */
 		starBulk();
-		System.out.println("�*�*");
-		System.out.println("��*");
-		System.out.println("�*�*");
+		System.out.println(" * *");
+		System.out.println("  *");
+		System.out.println(" * *");
 	}
 
 	// The starColum method prints out the 1x3 set of asteriks.
 	public static void starColumn(){
-		System.out.println("��*");
-		System.out.println("��*");
-		System.out.println("��*");
+		System.out.println("  *");
+		System.out.println("  *");
+		System.out.println("  *");
 	}
 
 }
