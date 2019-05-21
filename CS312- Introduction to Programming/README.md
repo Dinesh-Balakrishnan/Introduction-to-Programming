@@ -1,5 +1,9 @@
 # CS312 - Introduction to Programming
 
+**Language:** Java
+**Professor:** Mike Scott
+**Page:** https://www.cs.utexas.edu/~scottm/cs312/
+
 ## Notes
 
 * [Creating a Program, Naming Convention, and Basic String Syntax](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson1.java) 
