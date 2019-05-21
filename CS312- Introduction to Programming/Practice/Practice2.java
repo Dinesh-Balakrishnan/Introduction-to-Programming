@@ -9,11 +9,11 @@ public class Practice2 {
 	Create an ASCII representation of an egg:
 
 	_______
- /       \
-/         \
--"-'-"-'-"-
-\         /
-\_______/
+       /       \
+      /         \
+      -"-'-"-'-"-
+      \         /
+       \_______/
 
 
 	 */
