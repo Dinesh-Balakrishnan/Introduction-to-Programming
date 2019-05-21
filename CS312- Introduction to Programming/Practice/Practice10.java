@@ -17,7 +17,7 @@ public class Practice10 {
 
     ... evaluate the following expressions:
 
-    x == 4	                        | Answer: true
+    x == 4                          | Answer: true
 
     x == y                          | Answer: false
 
