@@ -63,9 +63,9 @@ public class Lesson19 {
 		System.out.println(a + " " + K); //Prints a K
 
 		//Or..
-		a = ('A' + "").toLowerCase().charAt(0);
-		K = ('k' + "").toUpperCase().charAt(0);
+		a = Character.toLowerCase(a);
+		K = Character.toUpperCase(K);
 		System.out.println(a + " " + K); //Prints a K
-		//The second method prevents other characters from being altered.
+		//Using the Character methods prevents other non-alphabetical characters from being altered.
 	}
 }
