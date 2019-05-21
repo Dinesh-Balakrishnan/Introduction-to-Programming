@@ -38,7 +38,10 @@ public class Lesson24 {
 
 		//Upcasting is casting an object to a parent type:
 		System.out.println(((Employee) example).employeeOnly); //Prints 99999
-
+		
+		//Methods will still remain overriden while upcasting:
+		System.out.println(((Employee) example).id()); //Prints 2
+			
 		//It is not possible to physically downcast an object:
 		//printType ((Secretary) new Employee()); (SYNTAX ERROR)
 		
@@ -59,13 +62,16 @@ class Employee {
 	public int employeeOnly = 99999;
 	public String type;
 	public Employee() {type = "Employee";}
+	public int id() {return 4;}
 }
 
 class Secretary extends Employee {
 	public Secretary() {type = "Secretary";}
+	public int id() {return 3;}
 }
 
 class LegalSecretary extends Secretary {
 	public LegalSecretary() {type = "Legal Secretary";}
 	public void printType() {System.out.println(type);}
+	public int id() {return 2;}
 }
