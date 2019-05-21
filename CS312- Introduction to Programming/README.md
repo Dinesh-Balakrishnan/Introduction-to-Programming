@@ -1,7 +1,9 @@
 # CS312 - Introduction to Programming
 
 **Language:** Java
+
 **Professor:** Mike Scott
+
 **Page:** https://www.cs.utexas.edu/~scottm/cs312/
 
 ## Notes
