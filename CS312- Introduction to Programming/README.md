@@ -57,3 +57,65 @@
 * [ArrayLists](https://github.com/Dinesh-Balakrishnan/Programming-Fundamentals/blob/master/CS312-%20Introduction%20to%20Programming/Notes/Lesson25.java)
 
 ## Practice Problems
+
+* [Binary Conversion and Console Printing](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice1.java)
+
+
+* [ASCII Art](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice2.java)
+
+
+* [Order of Operations /w String Concatentation](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice3.java)
+
+
+* [The For Loop - Set 1](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice4.java)
+
+
+* [The For Loop - Set 2](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice5.java)
+
+
+* [The For Loop - Set 3](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice6.java)
+
+
+* [DrawingPanel](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice7.java)
+
+
+* [Code Tracing and The Math Class](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice8.java)
+
+
+* [Mathmatical Thinking](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice9.java)
+
+
+* [Booleans](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice10.java)
+
+
+* [Strings - Set 1](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice11.java)
+
+
+* [Strings - Set 2](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice13.java)
+
+
+* [Console Scanners](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice12.java)
+
+
+* [Code Tracing and The While Loop](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice14.java)
+
+
+* [The Random Class](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice15.java)
+
+
+* [Logical Thinking](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice16.java)
+
+
+* [Text Scanners - Set 1](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice17.java)
+
+
+* [Text Scanners - Set 2](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice18.java)
+
+
+* [Arrays - Set 1](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice19.java)
+
+
+* [Arrays - Set 2](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice20.java)
+
+
+* [Arrays - Set 3](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/CS312-%20Introduction%20to%20Programming/Practice/Practice21.java)
