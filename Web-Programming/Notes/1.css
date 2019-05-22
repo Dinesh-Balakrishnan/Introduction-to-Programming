@@ -41,7 +41,7 @@ p { /*The targeted element is known as a selector. In this case, p is the select
 
 /*Elements can also be targeted by their specified class by including '.' before the class name. */
 .content { /*All elements with a class attribute of content will be selected. */
-  color: maroon !important; /*Just dont use '!important'. Specificity raised to the max.
+  color: maroon !important; /*Try not to use '!important'. Specificity raised to the max. */
 }
 
 /*Elements can even be targeted by their specified id by including '#' before the id name. */
