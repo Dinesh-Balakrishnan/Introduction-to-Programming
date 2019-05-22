@@ -1,31 +1,41 @@
 <!--
-DEFINITIONS:
-
-  - Document Object Model (DOM): An interface that represents how HTML documents
-    are read by the browser.
-    -- It organizes an HTML document as an object that can be accessed through scripts.
-
-  - Node: Every single part of an HTML document, from the entire document to text, is
-    considered an individual node.
-      --Examples of Node Types: Event, Document, DocumentType, URL  
-
-  - Root Node: The DOM is like a tree structure, as explained in the HTML. The highest
-    order node is the root node. As a result, it is always the HTML document itself.
-
--->
-
+   DEFINITIONS:
+   
+     - Document Object Model (DOM): An interface that represents how HTML documents
+       are read by the browser.
+       - It organizes an HTML document as an object that can be accessed through scripts.
+   
+     - Node: Every single part of an HTML document, from the entire document to text, is
+       considered an individual node.
+         - Examples of Node Types: Event, Document, DocumentType, URL  
+   
+     - Root Node: The DOM is like a tree structure, as explained in the HTML. The highest
+       order node is the root node. As a result, it is always the HTML document itself.
+   
+   -->
 <!DOCTYPE html>
-<html>	<!--The html element is a node and is a descendent of the root node.-->
-	<head> <!--The head element is an element of the html element, and is also a node.-->
-    <title>The title<!--This title statement is a node--></title>
-	</head>
-
-	<body>
-    <h1>The heading<!--Even this heading message is a node that is a descended of the h1 node.--></h1>
-		<div>
-    	<p>A summary</p> <!--In this scenario, the p element is the parent element and 'A summary' is a child node. -->
-    	<p>A description<!--There are many types of nodes. 'A description' is a Text node. --></p>
-    </div> <!--div is an Element node-->
-    <!--This comment is a Comment node-->
-	</body>
+<html>
+   <!--The html element is a node and is a descendent of the root node.-->
+   <head>
+      <!--The head element is an element of the html element, and is also a node.-->
+      <title>
+         The title <!--This title statement is a node-->
+      </title>
+   </head>
+	
+   <body>
+      <h1>
+         The heading<!--Even this heading message is a node that is a descendent of the h1 node.-->
+      </h1>
+	   
+      <div>
+         <p>A summary</p>
+         <!--In this scenario, the p element is the parent element and 'A summary' is a child node. -->
+         <p>
+            A description<!--There are many types of nodes. 'A description' is a Text node. -->
+         </p>
+      </div>
+      <!--div is an Element node-->
+      <!--This comment is a Comment node-->
+   </body>
 </html>
