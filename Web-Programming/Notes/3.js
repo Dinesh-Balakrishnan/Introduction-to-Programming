@@ -1,18 +1,19 @@
+//NOTE: JavaScript doesn't support method overloading and method overriding.
+
 //Because of hoisting, normalFunction is able to be called before it is declared in a file.
 normalFunction("Dinesh");
 
 //Because a function expression is set to a variable, variable hoisting will simply set to undefined.
 // functionExpression(); (SYNTAX ERROR)
 
-//NOTE: Function parameters don't require a type declaration
-//NOTE: Function parameters can be set to a default value in case enough parameters aren't passed in.
-//NOTE: Extra function parameters can be stored with '...'
+/*NOTE: Function parameters don't require a type declaration. They can be set to a default value 
+in case enough parameters aren't passed in. Extra function parameters can be stored with '...' */
 function normalFunction(name = "Stranger", age = "a number of", ...extraParams) {
   console.log("Just a normal function");
   console.log(`Created by ${name}, who is ${age} years old.`);
   
   for (val in extraParams)
-    console.log(`${val} is an extra parameter to normalFunction.`);
+    console.log(`${val} is an extra parameter passed into normalFunction.`);
 }
 
 const functionExpression = function() {
