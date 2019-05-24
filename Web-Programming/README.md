@@ -38,7 +38,7 @@
 
 * [Flexbox](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/6.css)
 
-## Notes - JavaScript
+## Notes - JavaScript (ES6 Syntax)
 
 * [Strings, Variables, and Data Types](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/1.js)
 
