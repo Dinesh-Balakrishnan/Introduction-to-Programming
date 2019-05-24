@@ -53,17 +53,21 @@ DEFINITIONS:
   <script defer>
     //1. Create an object with property values respective to the handlebar expressions.
     const context = {
-	    greeting: 'Hello World!',
+      greeting: 'Hello World!',
       opinion: true,
       positionArray: ['First', 'Second', 'Third'],
       shapeArray: [ {shape: 'Triangle'}, {shape: 'Circle'}, {shape: 'Square'}]
     }
+    
     //2. Get the HTML value of the Handlebar script.
     const source = document.getElementById('example').innerHTML;
+	  
     //3. Convert the HTML into a Handlebars template.
     const template = Handlebars.compile(source);
+	  
     //4. Compile the Handlebars template with the object values to get the actual HTML.
     const compiledHtml = template(context);
+	  
     //5. The innerHTML of other elements can be changed with the compiled template.
     document.getElementById('hello').innerHTML = compiledHtml;
   </script>
