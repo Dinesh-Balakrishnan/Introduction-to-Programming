@@ -22,7 +22,7 @@ DEFINTIONS:
     <!--The link element can be used to link necessary documents to an HTML file. In
         most cases it is better to have the CSS in a separate .css file, which needs
         to be linked to the current CSS document. -->
-    <link href="example.css" rel="stylesheet">
+    <link href="./example.css" rel="stylesheet">
     <!--The href attribute gets the path to the file, while the rel attribute describes
         what type of file it is. -->
 
@@ -35,11 +35,11 @@ DEFINTIONS:
 
   <!--The script tag can be placed on the top of the document with the defer attribute.
       The script will only start parsing once it has been loaded, pausing HTML until it is complete. -->
-  <script src="example.js" defer></script> <!--script tag info at bottom of document -->
+  <script src="./example.js" defer></script> <!--script tag info at bottom of document -->
 
   <!--The script tag can also have the async attribute. While the deferred script will load
       after the HTML has loaded, the asynchronous script won't wait. -->
-  <script src="example.js" async></script>
+  <script src="./example.js" async></script>
 
   <body>
     <!--To use inline style, just add the style attribute to a tag. -->
@@ -54,7 +54,8 @@ DEFINTIONS:
     text.onclick = () => text.innerHTML = "Look at that, even more knowledge.";
   </script>
 
-  <!--Scripts can also be linked to the document by using the src attribute on script. -->
-  <script src="example.js"></script>
+  <!--Scripts can also be linked to the document after the HTML to prevent 
+      loading problems. Works like defer. -->
+  <script src="./example.js"></script>
 
 </html>
