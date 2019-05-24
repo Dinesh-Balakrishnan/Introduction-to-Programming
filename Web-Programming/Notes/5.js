@@ -6,6 +6,13 @@ function loops() {
   for (let count = 0; count <= 10; count++) {
     console.log(count);
   }
+  
+  let values = [];
+  values[5] = '5th value.'
+  //For-In loop (Similar to Java's For-Each Loop)
+  for (value in values) {
+    console.log(value); //Logs out only '5th value.' and not the undefined index values for 0, 1, 2, and 3.
+  }
 
   let num = 30583483434099;
   //While loop:
@@ -21,7 +28,7 @@ function loops() {
     sugarNeeded--;
   } while (sugarNeeded < 0);
 
-  //The break keyword also functions as normal.
+  //The break keyword also functions like Java's.
 }
 
 function iterators() {
