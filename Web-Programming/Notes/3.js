@@ -6,9 +6,13 @@ normalFunction("Dinesh");
 
 //NOTE: Function parameters don't require a type declaration
 //NOTE: Function parameters can be set to a default value in case enough parameters aren't passed in.
-function normalFunction(name = "Stranger", age = "a number of") {
+//NOTE: Extra function parameters can be stored with '...'
+function normalFunction(name = "Stranger", age = "a number of", ...extraParams) {
   console.log("Just a normal function");
   console.log(`Created by ${name}, who is ${age} years old.`);
+  
+  for (val in extraParams)
+    console.log(`${val} is an extra parameter to normalFunction.`);
 }
 
 const functionExpression = function() {
