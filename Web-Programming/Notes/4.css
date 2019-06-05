@@ -47,8 +47,11 @@
   /*The most basic way to choose the color of an element is to use keyword colors. */
   color: rebeccapurple;
 
-  /*Colors can also be described in hexadecimal: */
+  /*16 million colors can also be described in hexadecimal: */
   background-color: #ff96ff; /* ff represents R, 96 represents G, ff represents B */
+  
+  /*4 thousand colors can be described in a shorter hexadecimal form: */
+  color: #F00; /*F00 is the same as FF0000, both which equate to red. */
 
   /*Another way is to represent them using rgb values in normal decimal format: */
   border: solid rgb(72, 61, 139); /* Parameters values are between 0 and 255. */
