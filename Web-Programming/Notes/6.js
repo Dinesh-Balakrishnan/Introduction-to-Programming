@@ -90,12 +90,16 @@ function objectFunctionality() {
   let {color, number} = example; //Two variables called color and number have been created.
   console.log(color); //Logs silver
   console.log(number); //Logs 10
+  
+  //Even if an object is set to constant, it's data can still be modified.
+  //By using Object.freeze(obj), properties cannot be added to, updated, or deleted in the object.
+  Object.freeze(example);
 }
 
 //A factory function is used to quickly create an object with desired behaviors and states.
 function factoryFunction(color, number, month, shape) {
   return {
-    //Thanks to destructuring, color doesn't needed to be stated as 'color: color'.
+    //Thanks to ES6 destructuring, color doesn't needed to be stated as 'color: color'.
     color,
     number,
     month,
