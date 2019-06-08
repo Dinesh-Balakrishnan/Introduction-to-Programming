@@ -30,7 +30,7 @@
 * [Positioning](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/3.css)
 
 
-* [Fonts and Text Styling](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/4.css)
+* [Typography](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/4.css)
 
 
 * [Media Selectors and Relative Sizing](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/5.css)
