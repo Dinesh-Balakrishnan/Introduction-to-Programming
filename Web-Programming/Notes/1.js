@@ -38,8 +38,12 @@ function creatingVariables() {
 
   //Multiple values can be created at the same time by using arrays.
   let [value1, value2] = [4, 5]; //value1 = 4, value2 = 5.
+  
   [value1] = [6, 7]; //Values can be ignored. In this case, the 7 is ignored.
   [value1, , value2] = [8, 9, 10]; //In this case, the 9 is ignored. 
+  
+  //Remaining elements that aren't initialized can be stored in a sub-array:
+  let [value3, ...arr] = [8, 9]; //arr === [9]
 }
 
 function primitiveDataTypes() {
