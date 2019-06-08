@@ -92,6 +92,10 @@ function objectFunctionality() {
   console.log(color); //Logs silver
   console.log(num); //Logs 10
   
+  //To access nested objects through destructuring:
+  let {nestedObj : {color}} = example;
+  console.log(color);
+  
   //Even if an object is set to constant, it's data can still be modified.
   //By using Object.freeze(obj), properties cannot be added to, updated, or deleted in the object.
   Object.freeze(example);
