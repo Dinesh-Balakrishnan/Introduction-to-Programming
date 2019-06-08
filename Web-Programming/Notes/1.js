@@ -1,8 +1,6 @@
 strings();
 creatingVariables();
 primitiveDataTypes();
-//For in, Errors, Import, HTTP Requests, CORS, Query String
-
 
 function strings() {
   /*I am a..
