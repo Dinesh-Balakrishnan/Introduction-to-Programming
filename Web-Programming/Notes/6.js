@@ -87,9 +87,10 @@ function objectFunctionality() {
 
   /*Destructuring is JavaScript syntax that allows groups of values to be
     assigned to individual variables. */
-  let {color, number} = example; //Two variables called color and number have been created.
+  let {color, number : num /*Renamed as num*/} = example; 
+  //Two variables called color and number have been created.
   console.log(color); //Logs silver
-  console.log(number); //Logs 10
+  console.log(num); //Logs 10
   
   //Even if an object is set to constant, it's data can still be modified.
   //By using Object.freeze(obj), properties cannot be added to, updated, or deleted in the object.
