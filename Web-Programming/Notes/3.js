@@ -6,8 +6,13 @@ normalFunction("Dinesh");
 //Because a function expression is set to a variable, variable hoisting will simply set to undefined.
 // functionExpression(); (SYNTAX ERROR)
 
+/*ES6 introduces the spread operator which allows an array to be unpacked into individual values
+  when passed as arguments into a function or array literal. */
+const values = ["Name", 10, true, "Hello"];
+normalFunction(...values);
+
 /*NOTE: Function parameters don't require a type declaration. They can be set to a default value 
-in case enough parameters aren't passed in. Extra function parameters can be stored with '...' */
+in case enough parameters aren't passed in. Extra function parameters can be stored with the spread operator */
 function normalFunction(name = "Stranger", age = "a number of", ...extraParams) {
   console.log("Just a normal function");
   console.log(`Created by ${name}, who is ${age} years old.`);
