@@ -63,8 +63,11 @@ function objectProperties(objValue, keyValue) {
   example['!!!!'] = 'Exclamation Marks';
   console.log(example['!!!!']); //Logs Exclamation Marks
 
-  //The object can be deleted using the 'delete' keyword:
+  //The object attribute can be deleted using the 'delete' keyword:
   delete example['!!!!'];
+  
+  //It is possible to see whether the object has a property with .hasOwnProperty()
+  let hasProp = example.hasOwnProperty('!!!!'); //Returns false.
 }
 
 function objectFunctionality() {
