@@ -63,8 +63,11 @@ function objectProperties(objValue, keyValue) {
   example['!!!!'] = 'Exclamation Marks';
   console.log(example['!!!!']); //Logs Exclamation Marks
 
-  //The object can be deleted using the 'delete' keyword:
+  //The object attribute can be deleted using the 'delete' keyword:
   delete example['!!!!'];
+  
+  //It is possible to see whether the object has a property with .hasOwnProperty()
+  let hasProp = example.hasOwnProperty('!!!!'); //Returns false.
 }
 
 function objectFunctionality() {
@@ -84,15 +87,24 @@ function objectFunctionality() {
 
   /*Destructuring is JavaScript syntax that allows groups of values to be
     assigned to individual variables. */
-  let {color, number} = example; //Two variables called color and number have been created.
+  let {color, number : num /*Renamed as num*/} = example; 
+  //Two variables called color and number have been created.
   console.log(color); //Logs silver
-  console.log(number); //Logs 10
+  console.log(num); //Logs 10
+  
+  //To access nested objects through destructuring:
+  let {nestedObj : {color}} = example;
+  console.log(color);
+  
+  //Even if an object is set to constant, it's data can still be modified.
+  //By using Object.freeze(obj), properties cannot be added to, updated, or deleted in the object.
+  Object.freeze(example);
 }
 
 //A factory function is used to quickly create an object with desired behaviors and states.
 function factoryFunction(color, number, month, shape) {
   return {
-    //Thanks to destructuring, color doesn't needed to be stated as 'color: color'.
+    //Thanks to ES6 destructuring, color doesn't needed to be stated as 'color: color'.
     color,
     number,
     month,

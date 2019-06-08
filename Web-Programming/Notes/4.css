@@ -22,6 +22,7 @@
   /*In case that a specified font isn't installed on a computer, fallback fonts can be used. */
   font-family: "Garamond", "Times", serif;
   /*If Garamond isn't installed, Times is used. If Times isn't installed either, any serif font is used. */
+  /*Generic Fonts: serif, sans-serif, monospace */
 
   /*Aside from the named font weights, values incremented by 100 from 100 to to 900 are allowed. */
   font-weight: 300; /* Default: 400, Light: 300, Bold: 700 */
@@ -47,8 +48,11 @@
   /*The most basic way to choose the color of an element is to use keyword colors. */
   color: rebeccapurple;
 
-  /*Colors can also be described in hexadecimal: */
+  /*16 million colors can also be described in hexadecimal: */
   background-color: #ff96ff; /* ff represents R, 96 represents G, ff represents B */
+  
+  /*4 thousand colors can be described in a shorter hexadecimal form: */
+  color: #F00; /*F00 is the same as FF0000, both which equate to red. */
 
   /*Another way is to represent them using rgb values in normal decimal format: */
   border: solid rgb(72, 61, 139); /* Parameters values are between 0 and 255. */

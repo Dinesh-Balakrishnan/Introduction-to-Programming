@@ -34,13 +34,14 @@ function uniqueOperators() {
   switch (groceryItem) {
     case 'tomato':
       console.log('Tomatoes are $0.49');
-      break;
+      break; 
     case 'lime':
+    case 'lemon': //Multiple cases can be lead to the same result.
       console.log('Limes are $1.49');
       break;
     case 'papaya':
       console.log('Papayas are $1.29');
-      break;
+      break; //If the break keyword isn't specified, the next case will be checked no matter what.
     default:
       console.log('Invalid item');
       break;

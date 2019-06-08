@@ -23,8 +23,12 @@ DEFINTIONS:
   values (width, style, and color) being optional. The default border is medium none color. */
   border: 3px solid coral;
   /*Width Values: (num)px, thin, medium, thick
-    Style Values: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
-    Color Values: Similar to the color property. */
+    Style Values: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset */
+  
+  /*Alternative Syntax to 'border': */
+  border-width: 3px;
+  border-style: solid;
+  border-color: coral;
 
   /*The border-radius property curves the corners of the box model. */
   border-radius: 5px; /*Corners are set to a radius of 5 pixels.*/
