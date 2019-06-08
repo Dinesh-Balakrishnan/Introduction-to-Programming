@@ -34,7 +34,7 @@ function uniqueOperators() {
   switch (groceryItem) {
     case 'tomato':
       console.log('Tomatoes are $0.49');
-      break;
+      break; //If the break keyword isn't specified, the next case will be checked no matter what.
     case 'lime':
       console.log('Limes are $1.49');
       break;
