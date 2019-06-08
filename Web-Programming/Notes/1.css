@@ -2,8 +2,9 @@
 DEFINITIONS:
 
   - Specificity: The order by which the browser decides which CSS styles will be displayed.
-    -- IDs are the most specific selector, followed by classes, then tags. The CSS properties of
-       the more specific selector will override any similar CSS properties of the less specific selector.
+    -- The CSS properties of the more specific selector will override any similar CSS
+       properties of the less specific selector.
+    -- IDs are the most specific selector, followed by classes and attributes, then tags.
     -- Chained selectors are more specific than their unchained counterparts.
 
 */
@@ -46,6 +47,13 @@ p { /*The targeted element is known as a selector. In this case, p is the select
 
 /*Elements can even be targeted by their specified id by including '#' before the id name. */
 #outline { /*The single element with an id attribute of outline will be selected. */
+
+}
+
+/*Elements with attributes can be selected too. Syntax: [attribute = 'value']
+  While the class and attribute selectors are of same specificity, the attribute selector is after
+  the class selector. Any similar properties will be overidden by the attribute selector.*/
+[color = 'blue'] {
 
 }
 

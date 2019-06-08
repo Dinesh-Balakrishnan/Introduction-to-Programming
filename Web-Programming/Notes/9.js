@@ -1,4 +1,4 @@
-//exportingCode();
+/*//exportingCode();
 //NOTE: If module.exports already contains a value, the export keyword is ignored.
 
 function exportingCode() {
@@ -53,4 +53,8 @@ export {constVar, ExampleClass as ChangedClass};
 /*Each file is also allowed one default export. This feature can be imported
  by another file with any name declaration. Named exports that aren't
  default must be imported using the same exported name. */
-export default 'I can be assigned any var name wanted!';
+//export default 'I can be assigned any var name wanted!'; /*
+function hello() {
+  console.log('hello');
+}
+module.exports = hello;

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--Web forms can submit data to a server with just HTML using the form tag-->
+    <form action='URL to Submit Data'>
+      <!--An input field is used to creat a text field. The placeholder attribute
+          is used to display text when the user hasn't inputted anything. -->
+      <input type='text' placeholder='Placeholder Text'>
+
+      <!--Radio buttons can be created with an input type of radio. Each button
+          must have the same name to be part of the same input group. The input
+          tag is within labels so that clicking on the input text is also works.-->
+      <label><input type='radio' name='radio_button'>1</label>
+      <label><input type='radio' name='radio_button'>2</label>
+      <label><input type='radio' name='radio_button'>3</label>
+
+      <!--Checkbox buttons are created the same way, with a type of 'checkbox'.
+          The 'required' attribute on the first checkbox states that an answer is
+          required. The other buttons don't require the 'required' attribute-->
+      <label><input type='checkbox' name='checkbox_button' required>1</label>
+      <label><input type='checkbox' name='checkbox_button'>2</label>
+      <!--The 'default' attribute automatically checks a button. -->
+      <label><input type='checkbox' name='checkbox_button' default>3</label>
+
+      <!--A form submit button can be created as follows: -->
+      <button type='submit'>Complete</button>
+
+      <!--The form can also be reset with a reset button: -->
+      <button type='reset'>Reset Form</button>
+    </form>
+    <!-- Other Input Types: color, date, datetime-local, email , file,
+         hidden, image, month, number, password, range, search, submit, tel,
+         time, url, week -->
+  </body>
+</html>

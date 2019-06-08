@@ -24,7 +24,7 @@ DEFINTIONS:
   border: 3px solid coral;
   /*Width Values: (num)px, thin, medium, thick
     Style Values: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset */
-  
+
   /*Alternative Syntax to 'border': */
   border-width: 3px;
   border-style: solid;
@@ -49,10 +49,13 @@ DEFINTIONS:
   margin: 20px;
   /*NOTE: The top and bottom margins between elements collapse.
 
+  /*A negative margin will increase the size of an element. */
+  margin: -15px;
+
   /*The auto keyword is a very helpful keyword that differs depending on the function is passed into: */
   /*With the margin property, the specified sides' margins will grow until the element is centered. */
   margin: 20px auto; /*Element is centered horizontally. */
-  
+
   /*With the height property, the height adjusts to the size of the content. */
   height: auto; /*The height is equal to the natural height of its element. */
 
