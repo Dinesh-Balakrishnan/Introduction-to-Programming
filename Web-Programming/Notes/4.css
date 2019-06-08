@@ -22,7 +22,7 @@
   /*In case that a specified font isn't installed on a computer, fallback fonts can be used. */
   font-family: "Garamond", "Times", serif;
   /*If Garamond isn't installed, Times is used. If Times isn't installed either, any serif font is used. */
-  /*Most Basic, Widely-Accepted Fonts: serif, sans-serif, monospace */
+  /*Generic Fonts: serif, sans-serif, monospace */
 
   /*Aside from the named font weights, values incremented by 100 from 100 to to 900 are allowed. */
   font-weight: 300; /* Default: 400, Light: 300, Bold: 700 */
