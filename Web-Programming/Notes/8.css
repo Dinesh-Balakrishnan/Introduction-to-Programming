@@ -1,0 +1,74 @@
+/*Shadows can be created with the box-shadow attribute: */
+.shadows {
+  /* Creating a shadow without blur: (Will simply create a grey background box) */
+  box-shadow: 5px 10px red; /*box-shadow: 'horizontal-offset' 'vertical-offset' 'color'
+
+  /*Creating a shadow with blur: */
+  box-shadow: 5px 10px 8px red; /*The 3rd value is the blur radius. */
+
+  /*Inverting the shadow to the inside of the container: */
+  box-shadow: 5px 10px 8px red inset; /*Use the inset keyword */
+
+  /*Increasing the size of the shadow: */
+  box-shadow: 5px 10px 8px 10px red; /*The 4th value is the spread radius. */
+
+  /*Creating multiple shadows: */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*Gradients help create beautifully colored backgrounds. NOTE: No IE support ;( */
+.gradient {
+  /*To create a linear gradient from one color to another: */
+  background: linear-gradient(purple, cyan);
+
+  /*The gradient can be angled: */
+  background: linear-gradient(35deg, purple, cyan);
+
+  /*Any number of colors can be passed into the gradient (min. 2): */
+  background: linear-gradient(purple, cyan, black, blue);
+
+  /*A gradient can be constantly repeated across a background: */
+  background: repeating-linear-gradient(45deg, cyan, pink 8%, magenta 10%);
+  /*Follows the same syntax as linear-gradient, a distance must be specified from
+    the second color stop and after. This is needed to determine where to repeat values. */
+
+  /*To create a radial gradient: OPTIONAL: Shape (circle or ellipse)*/
+  background: radial-gradient(circle, fuchsia 20% , cyan);
+
+  /*Instead of Shape: Size |closest-side at, farthest-side at, closest-corner at,
+    farthest-corner at + Radius Length, Optional Radius Length (for Ellipses)| */
+  background: radial-gradient(closest-side at 50%, fuchsia, cyan);
+
+  /*The radial gradient can also be repeated: (Following the repeating gradient rule)*/
+  background: repeating-radial-gradient(closest-side at 50%, fuchsia, cyan 20%);
+}
+
+/*The transform property physically changes the orientation of an element. */
+.transform {
+  /*To change the size of an element: */
+  transform: scale(0.5); /*Hoiztonal and Vertical Scale */
+  transform: scale(0.5, 0.25); /*Horizontal Size, Vertical Size */
+
+  /*To skew an element across the x-axis and y-axis:  */
+  transform: skewX(30deg);
+  transform: skewY(-25deg); /*Only one skew method may be used. Overrides skewX. */
+
+  /*To rotate an element: */
+  transform: rotate(45deg); /*Functions the same as rotateZ */
+
+  /*To move an element out of place (Without affecting other elements): */
+  transform: translate(20px, 10px);
+  transform: translateX(20px) translateY(10px);
+  /*Notice how multiple attributes can be set at the same time */
+}
+
+.transform-3D {
+  /*Elements can be rotated on the x and y axis: */
+  transform: rotateX(15deg) rotateY(10deg);
+
+  /*By using translateZ, an elment will essentially scale: */
+  transform: translateZ(50%);
+
+  /*scaleZ
+  /*WORK ON OOOOOOOOOOOOOO */
+}

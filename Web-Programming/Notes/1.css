@@ -32,9 +32,6 @@ p { /*The targeted element is known as a selector. In this case, p is the select
   /*To change the background color of elements: */
   background-color: orange;
 
-  /*To change the opacity of an element (How transparent it is): */
-  opacity: 0.75; /*1 represents fully visible and opaque, while 0 represents fully invisible */
-
   /*To set the background of an element to an image: */
   background-image: url("https://www.publicdomainpictures.net/pictures/130000/velka/multi-color-pattern-background.jpg");
 

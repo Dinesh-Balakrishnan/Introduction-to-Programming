@@ -1,0 +1,70 @@
+/*The root pseudo-class is used to declare global CSS variables and default properties. */
+:root {
+  /*Default properties: */
+  font-size: 20px;
+  font-family: cursive;
+
+  /*To declare a variable, just use '--' before it's name. Use '-' as a delimiter. */
+  --color: #00000F;
+  /*The benefit of CSS variables is that multiple selectors can use the variable.
+    To change all properties, only the declaration has to be changed. */
+}
+
+h1 {
+  /*For browsers such as IE that don't support variables, another declaration is needed. */
+  color: black;
+
+  /*To call upon a variable: var(--name) */
+  color: var(--color);
+
+  /*It is possible to change the value of '--color' for all child elements of h1: */
+  --color: #FF0;
+}
+
+/*The ::before and ::after pseudo elements insert content before and after an element.
+  Because they can be positioned relative to their parent, they're basically two extra
+  layers of detail added to each element. */
+h1::before {
+  /*The content tag is required for functionality in these two selectors. It can be
+    set to an image, string, or set blank */
+  content: url('image-url');
+}
+
+h1::after {
+  content:"";
+  /*Shapes are usually created by shaping the background of the element. It's
+    effective when the normal selector, ::before, and ::after are combined.*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+}
+
+/*It is also possible to select every element that isn't part of a selector */
+:not(p) {} /*All non-paragraph elements will be selected. */
+
+/*Selectors are available for elements when are targeted by an anchor. */
+#targeted-element:target {} /*In this case 'targeted-element' was referenced by some anchor. */
+
+/*The hover pseudo-class functions similar to JavaScript's 'onmouseover' property. */
+h1:hover{}
+
+/*Links have many states: unvisited, visited, mouseover, and selected.
+  The selectors need to be placed in this order for proper functionality.*/
+
+/*Unvisited Link: */ a:link {}
+/*Visited Link: */ a:visited {}
+/*Mouse Over Link: */ a:hover {}
+/*Selected Link: */ a:active {}
+
+/*Input elements also have many pseudo-class selectors: */
+
+/*Checked Buttons: */ input:checked {}
+/*Currently Selected Element: */ input:focus {}
+/*Disabled/Disabled Elements: */ input:disabled {} input:enabled {}
+/*Invalid/Valid User Inputs: */ input:invalid {} input:valid {}
+/*Required/Optional Elements: */ input:required {} input:optional {}

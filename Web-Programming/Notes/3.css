@@ -20,8 +20,8 @@
   position: fixed;
 
   /*Multiple elements may collide with one another when using these display positions. In order to
-    make sure that a certain element is in front of the other when they collide, the z-score property exists. */
-  z-index: 2;  /*This element will overlap elements with a default z-score of 1. */
+    make sure that a certain element is in front of the other when they collide, the z-index property exists. */
+  z-index: 2;  /*This element will overlap elements with a default z-index of 1. */
   /*NOTE: Only integer values are accepted */
 }
 

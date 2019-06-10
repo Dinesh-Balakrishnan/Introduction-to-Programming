@@ -36,9 +36,10 @@
   /*Just like word-spacing, letter-spacing also exists. */
   letter-spacing: 0.35em;
 
-  /*The text can all be made uppercase or lowercase with the text-transform property. */
+  /*Text can be made uppercase or lowercase with the text-transform property. */
   text-transform: lowercase;
   text-transform: uppercase;
+  text-transform: capitalize;
 
   /*Lastly, the line height can be changed by using a unitless number for the line-height property. */
   line-height: 1.4; /*The value will automatically scale with the font size. */
@@ -50,7 +51,7 @@
 
   /*16 million colors can also be described in hexadecimal: */
   background-color: #ff96ff; /* ff represents R, 96 represents G, ff represents B */
-  
+
   /*4 thousand colors can be described in a shorter hexadecimal form: */
   color: #F00; /*F00 is the same as FF0000, both which equate to red. */
 
@@ -64,4 +65,7 @@
     This value represents opacity, with 1 being opque and 0 being transparent. */
   color: rgba(123, 44, 78, 0.5);
   color: hsla(144, 50%, 72%, 1);
+
+  /*Opacity can be individually targeted with the opacity attribute. */
+  opacity: 50%;
 }

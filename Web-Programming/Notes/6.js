@@ -1,6 +1,6 @@
 let example = objectSyntax();
 objectProperties(example, 'number');
-objectFunctionality();
+objectFunctionality(example);
 let quickObj = factoryFunction('indigo', 4, 10, 'square');
 
 function objectSyntax() {
@@ -65,40 +65,45 @@ function objectProperties(objValue, keyValue) {
 
   //The object attribute can be deleted using the 'delete' keyword:
   delete example['!!!!'];
-  
+
   //It is possible to see whether the object has a property with .hasOwnProperty()
+  //NOTE: Multiple values can be passed in.
   let hasProp = example.hasOwnProperty('!!!!'); //Returns false.
 }
 
-function objectFunctionality() {
+function objectFunctionality(obj) {
   //All enumerated, non - Symbol properties can be looped through by using 'for...in'
-  for(key in example) {
+  for(key in obj) {
     console.log(key); //Prints the key name.
-    console.log(example[key]); //Prints the value of the key
+    console.log(obj[key]); //Prints the value of the key
     //NOTE: Syntax really matters here because functions won't work.
   }
 
+  //An array of keys can simply be generated with the .keys() function:
+  obj.keys();
+
   //Getter methods are used to get data. The syntax is of a variable.
   console.log("Result of getter: ")
-  console.log(example.privateVariable);
+  console.log(obj.privateVariable);
 
   //Setter methods are used to set data. The syntax is similar to reinitialization.
-  example.privateVariable = "New Value";
+  obj.privateVariable = "New Value";
 
   /*Destructuring is JavaScript syntax that allows groups of values to be
     assigned to individual variables. */
-  let {color, number : num /*Renamed as num*/} = example; 
+  let {color, number : num /*Renamed as num*/} = obj;
   //Two variables called color and number have been created.
   console.log(color); //Logs silver
   console.log(num); //Logs 10
-  
+
   //To access nested objects through destructuring:
-  let {nestedObj : {color}} = example;
+  let {nestedObj : {color}} = obj;
   console.log(color);
-  
+
   //Even if an object is set to constant, it's data can still be modified.
-  //By using Object.freeze(obj), properties cannot be added to, updated, or deleted in the object.
-  Object.freeze(example);
+  /*By using Object.freeze(objectName), properties cannot be added to, updated, 
+  or deleted in the object. */
+  Object.freeze(obj);
 }
 
 //A factory function is used to quickly create an object with desired behaviors and states.

@@ -63,4 +63,10 @@ function arrayMethods(newYearsResolutions) {
   let num2 = [4, 5, 6];
   let num3 = [7, 8, 9];
   console.log(num1.concat(num2, num3)); //Logs [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  //An alternative to .concat() is pushing values with the spread operator:
+  num3.unshift([...num1], [...num2]); //Equals [1, 2, 3, 4, 5, 6, 7 ,8, 9]
+
+  //If elements have to be placed in a certain location:
+  num2 = [...num1, 0, ...num3];
 }
