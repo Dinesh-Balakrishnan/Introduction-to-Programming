@@ -18,6 +18,12 @@ public class Lesson24 {
 		Employee example1 = new Secretary();
 		Employee example2 = new LegalSecretary();
 		Object example3 = new Employee();
+		
+		/*The .equals() method can be implemented by a class to check whether two different
+		  objects are equal. Alternatively, == can be used to check whether two variables
+		  contain the same pointers. */
+		Secretary secretary = example1;
+		console.log(secretary == example1); //Logs true
 
 		//A variable CANNOT refer to an object of a type that is it a sub-type of:
 		//LegalSecretary example = new Employee(); (SYNTAX ERROR)
