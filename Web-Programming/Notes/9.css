@@ -1,0 +1,107 @@
+/*
+DEFINITIONS:
+
+  - Animation: The process of going through various states.
+
+  - Transition: The process of changing from one state to another.
+
+  - Bezier-Curve: A mathematically defined function used in two-dimensional graphics
+                  applications to create a curve.
+    -- The curve is defined by two anchor points at the start and the end, along
+       with tangent points that change its shape.
+*/
+
+#animation {
+  /*For an element to receive an @keyframes rule, it needs an animation-name to be
+    targeted. */
+  animation-name: target-name;
+
+  /*The duration of the animation is set within the elemnt itself. */
+  animation-duration: 1s; /* Or 1000ms */
+
+  /*After an animation is done, it resets by default. To keep the changed properties: */
+  animation-fill-mode: forwards;
+
+  /*The number of times an element animates can be specified, including 'infinite'. */
+  animation-iteration-count: infinite;
+
+  /*To change speed of an animation during different keyframes of its runtime. */
+  animation-timing-function: linear; /*Default */
+  animation-timing-function: ease; /*Slow, Faster, Slow */
+  animation-timing-function: ease-in; /*Slow Start */
+  animation-timing-function: ease-out; /*Slow End */
+
+  /*Bezier-Curves are used in CSS in conjunction with the animation-timing-function.
+    P0 and P3 are defined at (0, 0) and (1, 1) respectively. P1 and P2 are the
+    tangent points that define the shape of the curve. The X-axis is the duration
+    of the animation and the Y-axis is change in the animation. */
+  animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75); /*Linear*/
+  /*Syntax: cubic-bezier(P1x, P1y, P2x, P2y); (0 <= x <= 1, -inf < y < inf) */
+}
+
+/*The @keyframes selector describes the actions during an animation. */
+@keyframes target-name {
+  /*Keyframes can be targeted by percentages, 0% being the first keyframe and
+    100% being the last of the animation. */
+  0% {
+    /*CSS offset properties can be used to move an element. While it may seem as
+      though the top property isn't needed, it helps provide a smooth transition
+      from the starting to ending positions. */
+    top: 0px;
+
+    /*Almost any property can be changed, such as color. */
+    color: blue;
+  }
+  50% {
+    top: 50px;
+
+    /*Even the color property goes through color transitions from red to blue. */
+    color: red;
+  }
+  100% {
+    /*The transition from 50% to 100% is faster due to the greater distance. */
+    top: 150px;
+  }
+}
+
+@keyframes example {
+  /*No specific frame has to be specified for an animation to occur. */
+  50% {
+    opacity: 0.1;
+  }
+  /*In this case, changes are made until 50%. If the last keyframe isn't specified,
+    all changes will be reverted with the remaining keyframes. */
+}
+
+#transition {
+  /*A transition is a simple change in property values compared to an animation.
+    A transition should be used when a change needs to occur on a page due to user
+    interaction, but that change should occur smoothly. */
+
+  width: 100px;
+  height: 50px;
+
+  /*transition-property tells the compiler what properties should have a transition: */
+  transition-property: width height transform;
+
+  /*transition-duration works like animation-duration: */
+  transition-duration: 2s;
+
+  /*transition-timing-function works like animation-timing-function: */
+  transition-timing-function: ease-in;
+
+  /*transition-delay specified the amount of time to wait before the transition occurs: */
+  transition-delay: 500ms;
+
+  /*All properties can be summed into one with transition: */
+  transition: width 2s ease-in 500ms, height 2s ease-in 500ms, transform 2s;
+  /*Note that each property has to be described individually. */
+}
+
+#transition:hover {
+  /*Properties specified in hover that are targeted by transition-property will
+    have the transition specifed applied to them. */
+  width: 50px;
+  height: 100px;
+  transition: rotate(720deg);
+}

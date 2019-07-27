@@ -49,8 +49,10 @@ DEFINITIONS:
 
         <!--There are many inline style tags. <hr> inserts a horizontal line across the page. -->
         <p>
-          <em>Italicized text!</em>
-          <strong>Bolded text!</strong>
+          <i>Italicized text!</i>
+          <b>Bolded text!</b>
+          <em>Italicized, IMPORTANT text!</em>
+          <strong>Bolded, IMPORTANT text!</strong>
           <u>Underlined text!</u>
           <s>Struckthrough text!</s>
           <hr>
@@ -60,7 +62,7 @@ DEFINITIONS:
         <p>This is on one line..<br>but this is on another!</p>
       </div>
 
-      <div id="Images & Videos">
+      <div id="Media">
         <!--To place an image, use the image tag, img. -->
         <img src="https://www.publicdomainpictures.net/pictures/130000/velka/multi-color-pattern-background.jpg"/>
         <!--The image tag is self closing as it doesn't require a closing tag. -->
@@ -68,6 +70,9 @@ DEFINITIONS:
         <!--In case an image doesn't load or is to be read by browsers made for the visually impared,
             the alt attribute provides a short description of the image. -->
         <img src="#" alt="A gradient of colors ranging from green to red."/>
+
+        <!--Images that don't need description still need an alt attribute, just empty. -->
+        <img src='#' alt="">
 
         <!--Videos can also be displayed by using the video element. -->
         <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4"

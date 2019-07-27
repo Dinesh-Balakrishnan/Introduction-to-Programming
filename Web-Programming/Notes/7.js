@@ -17,9 +17,9 @@ function selectingElements() {
   let classArray = document.querySelectorAll('.exampleClass');
 
   //Tags, classes and ID attributes have their own selectors:
-  let tagArray = document.getElementsByTagName('p');
-  classArray = document.getElementsByClassName('exampleClass'); //The '.' is missing
-  let id = document.getElementById('exampleID'); //The '#' is missing
+  let tagArray = document.getElementsByTagName('p'); //Array
+  classArray = document.getElementsByClassName('exampleClass'); //Array
+  let id = document.getElementById('exampleID');
 
   //Elements can also be selected by using the relationship between parent and children nodes.
   let child = document.body.firstChild;

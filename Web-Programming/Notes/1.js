@@ -18,6 +18,12 @@ function strings() {
   const myCity = "Los Angeles";
   //String interpolation is a cleaner method to perform string concatentation:
   console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+
+  //String methods in JS worth noting: (Also has all non-mutative array methods.)
+  console.log(' Hello '.trim()); //Logs 'Hello'
+  console.log('Hello'.endsWith('o') && 'Hello'.startsWith('h')); //Logs 'false'
+  console.log('A'.charCodeAt(0)); //Returns 65 (Unicode Value)
+  console.log(String.fromCharCode(65)); //Returns 'A'
 }
 
 function creatingVariables() {
@@ -34,9 +40,9 @@ function creatingVariables() {
   const noChange = 'Forever trapped...';  //Syntax Error if declared without initialization.
 
   //To find what a variable's type is, use the typeof operator:
-  console.log(typeof functionScoped); //Logs number
+  console.log(typeof functionScoped); //Logs 'number'
 
-  //Multiple values can be created at the same time by using arrays.
+  //Multiple values can be created at the same time by using arrays:
   let [value1, value2] = [4, 5]; //value1 = 4, value2 = 5.
 
   [value1] = [6, 7]; //Values can be ignored. In this case, the 7 is ignored.
@@ -48,6 +54,7 @@ function creatingVariables() {
 
 function primitiveDataTypes() {
   let num = 4.56 //NUMBER TYPE (Includes decimal numbers)
+  //NOTE: JS often messes up decimal math due to value inaccuracies.
 
   let str = 'example'//STRING TYPE (Can be enclosed in ' ' or " ")
 

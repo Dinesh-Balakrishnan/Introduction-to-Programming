@@ -6,17 +6,17 @@ function loops() {
   for (let count = 0; count <= 10; count++) {
     console.log(count);
   }
-  
+
   let values = [];
   values[5] = '5th value.'
-  //For-In loop (Similar to Java's For-Each Loop)
-  for (value in values) {
-    console.log(value); //Logs out only '5th value.' and not the undefined index values for 0, 1, 2, and 3.
+  //For-In loop
+  for (let value in values) {
+    console.log(value); //Logs out 5, because only the 5th index contains a value.
   }
 
   let num = 30583483434099;
   //While loop:
-  while (num > 0) {
+  while (num > 1) {
     console.log(num);
     num /= 10;
   }
@@ -57,6 +57,11 @@ function iterators() {
   console.log(fruits.reduce((accumulator, fruit) => accumulator + fruit));
   //Logs mangopapayapineappleapple
 
+  /*The accumulator value has a default value equaling the first element in
+    the array. To change this, pass in a parameter. */
+  console.log(fruits.reduce((accumulator, fruit) => accumulator + fruit, fruits[1]));
+  //Logs papayamangopapayapineappleapple ('papaya' added in front.)
+
   /*The .some() iterator returns true at least a single element in an array satisfies
     the necessary boolean requirement. Else, it returns false. */
   console.log(fruits.some(fruit => fruit[0] == 'p')); //Logs true
@@ -64,4 +69,13 @@ function iterators() {
   /*Alternatively, the .every() iterator returns true if every single element in an
   array satisfies the necessary boolean requirement. Else, it returns false. */
   console.log(fruits.every(fruit => fruit[0] == 'p')); //Logs false
+
+  /*The .sort() iterator sorts the array like Java's compareTo(), except booleans
+    are also allowed. */
+  fruits.sort((frt1, frt2) => frt1 > frt2);
+  console.log(fruits); //Logs ['apple', 'mango', 'papaya', 'pineapple']
+
+  //NOTE: The iterators can accept two extra parameters.
+  //The first of the two equals the current index, the second being the calling array.
+  fruits.forEach((fruit, index, array) => console.log(array[index]));
 }

@@ -1,0 +1,69 @@
+/*All child elements of a parent element that has a display of grid or inline-grid
+  are grid items. The parent element is the grid container. */
+.container {
+  display: grid;
+  display: inline-grid;
+  width: 500px;
+
+  /*To add rows and columns to the grid: */
+  grid-template-rows: 100px 50px 50px; /*3 rows, first 100px. */
+  grid-template-columns: 50px 50px; /*Two columns, each 50px. */
+
+  /*'fr' is a grid unit indicating free space. Rows and colums with these units
+    calculate them after other units. ('auto' keeps just the content, no spacing)*/
+  grid-template-rows: 100px 100px 2fr 1fr; /* 100px 100px 200px 100px */
+
+  /*Values can be repeated with the repeat function: */
+  grid-template-rows: 100px repeat(auto-fill, 50px); /*Inserts rows until full. */
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  /*Inserts rows until full, collapses empty rows and stretches the rest. */
+  grid-template-rows: repeat(2, 100px 1fr); /*Equals: '100px 1fr 100px 1fr' */
+
+  /*The size of auto generated sections can be set: */
+  grid-auto-rows: 60px grid-auto-columns: 10%;
+
+  /*When the size of the container changes, the sections also change in size.
+    Limits can be set on this change with minmax(). */
+  grid-template-columns: 100px minmax(50px, 200px);
+
+  /*To create spacing between row elements and column elements. */
+  grid-row-gap: 10px; grid-column-gap: 20px; /* Same as... */
+  grid-gap: 10px 20px; /*One value will set both gaps. */
+
+  /*Normally, grid items fill up row by row. To fill them up column by column: */
+  grid-auto-flow: column;
+
+  /*It is possible to give an identity to each section of the grid: */
+  grid-template-areas: "header header", /*Each quote indicates a row. */
+                       "content content",
+                       "comments .", /*The '.' represents an unidentified cell. */
+                       "footer footer"
+
+  /*To align elements horizontally: */
+  justify-items: start; /*Also 'center', 'end'. */
+
+  /*To align elements vertically: */
+  align-items: center;
+
+  /*Combo alignment: */
+  place-items: start center;
+
+  /*To move the entire grid: */
+  justify-content: center; align-content: center; place-content: center;
+  /*Difference from flex: No flex keyword, also space-evenly*/
+}
+
+.container .child {
+  /*A grid with 3 columns has 4 hypothetical vertical lines (| | | |), same with
+    rows. To determine the size of an element across columns, the starting and
+    ending line should be specified. */
+  grid-row: 2 / 5; /*Second, third, and fourth rows are filled. */
+  grid-column: 1 / 3; /*First two columns are filled. */
+  grid-area: 2 / 1 / 5 / 3;
+
+  /*The child can take up an area based on section identities. */
+  grid-area: header;
+
+  /*To align an individual element (Same 3 alignment properties)*/
+  justify-self: start; align-self: center; place-self: start center;
+}

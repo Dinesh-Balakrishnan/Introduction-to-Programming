@@ -1,7 +1,7 @@
 /*Shadows can be created with the box-shadow attribute: */
 .shadows {
   /* Creating a shadow without blur: (Will simply create a grey background box) */
-  box-shadow: 5px 10px red; /*box-shadow: 'horizontal-offset' 'vertical-offset' 'color'
+  box-shadow: 5px 10px red; /*box-shadow: 'horizontal-offset' 'vertical-offset' 'color' */
 
   /*Creating a shadow with blur: */
   box-shadow: 5px 10px 8px red; /*The 3rd value is the blur radius. */
@@ -43,7 +43,9 @@
   background: repeating-radial-gradient(closest-side at 50%, fuchsia, cyan 20%);
 }
 
-/*The transform property physically changes the orientation of an element. */
+/*The transform property physically changes the orientation of an element.
+  NOTE: Transform calls override each other. All attributes need to be set at
+  the same time.*/
 .transform {
   /*To change the size of an element: */
   transform: scale(0.5); /*Hoiztonal and Vertical Scale */
@@ -51,7 +53,7 @@
 
   /*To skew an element across the x-axis and y-axis:  */
   transform: skewX(30deg);
-  transform: skewY(-25deg); /*Only one skew method may be used. Overrides skewX. */
+  transform: skewY(-25deg);
 
   /*To rotate an element: */
   transform: rotate(45deg); /*Functions the same as rotateZ */
@@ -60,15 +62,52 @@
   transform: translate(20px, 10px);
   transform: translateX(20px) translateY(10px);
   /*Notice how multiple attributes can be set at the same time */
+
+  /*To remove all transformation properties: */
+  transform: none;
 }
 
 .transform-3D {
+  /*When dealing with 3D transformations, the perspective attribute helps define the 3D space. */
+  perspective: 500px; /*The value is the amount of space between the object and the user. */
+
+  /*NOTE: Only the child elements receive the perspective view. Not the parent itself. */
+}
+
+.transform-3D .child {
+  /*Perspective can be set for a single element itself with perspective(): */
+  transform: perspective(500px);
+
   /*Elements can be rotated on the x and y axis: */
   transform: rotateX(15deg) rotateY(10deg);
 
-  /*By using translateZ, an elment will essentially scale: */
-  transform: translateZ(50%);
+  /*By using translateZ, an elment will essentially scale (Without perspective).
+    Else, it moves an element across the z-axis. This is important as elements need
+    to move away from their center point to create a 3-D effect.*/
+  transform: translateZ(100px);
 
-  /*scaleZ
-  /*WORK ON OOOOOOOOOOOOOO */
+  /*Text has different anti-aliasing from other elements, so it appears fuzzy when
+    scaled close to the user using translateZ. To fix the problem: */
+  transform: translateZ(-100px);
+
+  /*scaleZ will resize an element across the z-axis. The scaling isn't isotropic
+    (same case with scaleX() and scaleY()), so the flat side of an element won't scale. */
+  transform: scaleZ(100px);
+
+  /*The origin around which an element will be transformed can be set: */
+  transform-origin: top; /*Also 'left', 'right', 'bottom', 'center' or length */
+  transform-origin: top left;
+  transform-origin: bottom right -60px; /*Z-value must be a length. */
+
+  /*The transform-style property ensures that elements are positioned in a 3D space instead
+    of being flattened in the plane of the parent element. */
+  transform-style: preserve-3d; /*'flat' is the default property. */
+
+  /*An individual element is like a card, having two faces. The backside of the card
+    can be hidden, making the element disappear. */
+  backface-visibility: hidden;
+
+  /*No transform properties are inherited. They can be inherited with the 'inherit'
+    attribute. 'initial' won't reset an element back to a default 2D plane if the
+    parent itself is 3 dimensional.*/
 }

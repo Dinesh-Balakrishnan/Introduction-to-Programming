@@ -15,7 +15,7 @@ function falsyValues() {
 
 function uniqueOperators() {
   //The == sign converts data types in order to compare two statements/variables:
-  console.log('1' == 1); //Logs true
+  console.log('1' == 1); //Logs true - Automatically functions like parseInt('1')
 
   //Alternatively, the === doesn't convert data types when comparing:
   console.log('1' === 1); //Logs false
@@ -34,7 +34,7 @@ function uniqueOperators() {
   switch (groceryItem) {
     case 'tomato':
       console.log('Tomatoes are $0.49');
-      break; 
+      break;
     case 'lime':
     case 'lemon': //Multiple cases can be lead to the same result.
       console.log('Limes are $1.49');

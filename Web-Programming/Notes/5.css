@@ -47,11 +47,17 @@ html {
   /* % is also a scaling value type. If the body width is 30px, the width of .relativeSizing is 15px.
     It it's 40px, the width is 20px. */
 
-    /*It is possible to limit how large or small an element can get. */
-    min-height: 50px;
-    max-height: 300px;
-    min-width: 100px;
-    max-width: 400px;
+  /*To scale directly with the dimensions of the viewport: */
+  width: 10vw; /*10% of the viewport's width*/
+  height: 3vh; /*3% of the viewport's height*/
+  padding: 70vmin; /*70% of the viewport's smaller dimension*/
+  padding: 100vmax; /*100% of the viewport's bigger dimension*/
+
+  /*It is possible to limit how large or small an element can get. */
+  min-height: 50px;
+  max-height: 300px;
+  min-width: 100px;
+  max-width: 400px;
 }
 
 /*The .container selector sets the size of an image container. The set height won't scale, but the width will. */

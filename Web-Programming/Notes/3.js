@@ -1,5 +1,3 @@
-//NOTE: JavaScript doesn't support method overloading and method overriding.
-
 //Because of hoisting, normalFunction is able to be called before it is declared in a file.
 normalFunction("Dinesh");
 
@@ -11,21 +9,21 @@ normalFunction("Dinesh");
 const values = ["Name", 10, true, "Hello"];
 normalFunction(...values);
 
-/*NOTE: Function parameters don't require a type declaration. They can be set to a default value 
+/*NOTE: Function parameters don't require a type declaration. They can be set to a default value
 in case enough parameters aren't passed in. Extra function parameters can be stored with the spread operator */
 function normalFunction(name = "Stranger", age = "a number of", ...extraParams) {
   console.log("Just a normal function");
   console.log(`Created by ${name}, who is ${age} years old.`);
-  
-  for (val in extraParams)
-    console.log(`${val} is an extra parameter passed into normalFunction.`);
+
+  for (let val in extraParams)
+    console.log(`${extraParams[val]} is an extra parameter passed into normalFunction.`);
 }
 
 const functionExpression = function() {
   console.log("I'm set to a variable!");
 }
 
-//ES6 has introduced a different way to create funcionExpression by using 'arrow function syntax'.
+//ES6 has introduced a different way to create functionExpression by using 'arrow function syntax'.
 const arrowFunction = (name = "Stranger", age = "a number of") => {
   console.log(`Created by ${name}, who is ${age} years old.`);
 }
@@ -34,20 +32,50 @@ const arrowFunction = (name = "Stranger", age = "a number of") => {
 const noParentheses = name => console.log(`Created by ${name}.`);
 //Notice that the brackets can be removed when a single-line function is created.
 
-//When a single-line function needs to return a value:
+//When a single-line function doesn't need a return value:
+//(An object needs to be wrapped in '()')
 const noReturnStatement = () => true; //Returns true
 
-/*
-Main Differences: Function Declarations and Function Expressions
+/* Main differences beteween function declarations and function expressions is that
+  function declarations can be called before they are declared due to hoisting,
+  while function expressions are only loaded after they are reached during code
+  execution. */
 
-  - Function declarations can be called upon before they are declared.
-  - Function expressions can only be called after they are declared and follow scoping rules.
+let value1 = 1;
+let value2 = 2;
 
-  - Function declarations are loaded before code is executed.
-  - Function expressions are loaded only after they are reached during code execution.
+/*An IIFE, Immediately Invoked Function Expression, is a function invoked as soon
+  as it is loaded in. It is anonymous, so it can't be called upon again.*/
+(function(v1, v2) {
+  //One benefit is quickly shortening variable names.
 
-  - Function expressions are VERY helpful when serving as callback functions because
-    they don't require the use of parentheses.
-  - Function declarations cannot be used because they require parentheses to be called upon.
-    As a result, they immediately are executed.
-*/
+  /*Another is that variables can be used within a private scope and can't be
+    accessed anywhere else. */
+  let scopedVariable = 10;
+
+  /*Lastly, memory usage is shortened. */
+}(value1, value2));
+
+//IIFEs can be used to create modules with privacy restrictions:
+let module = (function() {
+  let variable = 10; //Variable cannot be accessed.
+  return {
+    increment: () => variable++, //Through properties set in the module,
+    decrement: () => variable--, //it can be modified or used.
+    value: () => variable
+  }
+}());
+
+/*A curried function is one that is able to take parameters at intervals
+  This ties well with asynchronous programming as the function can process
+  certain parameters while waiting for others*/
+function curriedFunction(a, b) {
+  y = a + b;
+  return c => y + c;
+}
+
+//Calling the function:
+let firstPart = curriedFunction(1, 1);
+let finished = firstPart(1);
+//Or....
+finished = curriedFunction(1, 1)(1);

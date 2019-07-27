@@ -1,0 +1,117 @@
+<!-- A semantic tag is one that clearly describes its meaning to both the browser
+  and the developer. Non-semantic elements like <div> and <span> are simply
+  general tags to seperate content. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*To include information for visually impaired users that doesn't appear
+        on the page for normal users, use the attributes and properties in
+        '.hidden-information'. This places an element that will be rendered as
+        normal by a screen reader completely off the page and hidden from view. */
+      .hidden-information {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+      }
+
+      /*To make an image responsive to the size of it's container: */
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+
+      /*To target retina displays: */
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        /*To make most images appear retina, their size should be decreased
+          by half. Better resolution, but smaller image size. */
+        height: 50%;
+        width: 50%;
+      }
+    </style>
+  <head>
+
+  <body>
+    <header>
+      The header tag should contain information that appears before main, such
+      as the website's title, navigation links, or a page's title.
+      <nav>
+        Link1 |
+        Link2 |
+        Link3
+      </nav>
+
+      <!--An element can gain immediate focus through keyboard input when it has
+        an acceskey attribute. Different browsers have different accesskey shortcuts,
+        Chrome's being Alt + accesskey -->
+      <a href="#" accesskey="l"></a>
+
+      <!--The tabindex determines how elements are focused when the user uses the tab key.
+        Properties:
+          -1:    The element cannot be focused through tab.
+
+          0:     The element will be focused on through the natural ordering of the page.
+
+          1-inf: Elements with a lower positive tabindex will be focused first, followed by
+                 tabs with a larger positive tabindex. Finally, elements with a tabindex
+                 of 0 will be focused.
+      -->
+      <button type="button" tabindex='1'></button>
+    </header>
+
+    <main>
+      The main tag contains the main content that surrounds information related
+      to the central topic of a page.
+
+      To help the browser understand the time being specified in a document:
+      Date: <time datetime="2019-6-25 12:34">6/25/2019</time>
+      <!--The specific time is optional. It follows military timing. -->
+
+      <audio controls>
+        <!--The video tag can also have its sources formatted as such. -->
+        <source src="Main Source" type="audio/mpeg" />
+        <source src="Secondary" type="audio/ogg" />
+        If the audio tag doesn't work, this will display. The audio tag also needs
+        captions for people who are deaf or have a hard time hearing:
+        <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">
+        The syntax for subtitles is very similar to captions:
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="english_captions">
+      </audio>
+
+      <figure>
+        The figure element helps wrap a visual element such as an image or chart
+        along with a caption.
+        <img src="#" alt="Photo of visual element">
+        <br>
+        <figcaption>
+          Explanation of what is happening in the visual element.
+        </figcaption>
+      </figure>
+    </main>
+
+    <section>
+      <h1>Comments Section</h1>
+      <article>
+        The article tag is used for sectioning and is used to wrap independent,
+        self-contained content. The tag works well with blog entries, forum
+        posts, news articles, or comments.
+      </article>
+      <article>
+        The section tag is to group together related elements. It sounds similar
+        to a div element, but the div element doesn't have any meaning other
+        than sectioning contents for Javascript and Cascading Style Sheets.
+      </article>
+      <article>Comment 3</article>
+    </section>
+
+    <footer>
+      The footer is mainly used to contain copyright information or links to
+      related documents at the bottom of the page.
+    </footer>
+  </body>
+</html>

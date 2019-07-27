@@ -54,7 +54,7 @@ DEFINTIONS:
 
   /*The auto keyword is a very helpful keyword that differs depending on the function is passed into: */
   /*With the margin property, the specified sides' margins will grow until the element is centered. */
-  margin: 20px auto; /*Element is centered horizontally. */
+  margin: 20px auto; /*Element is centered horizontally. (NOTE: A width or height is required.)*/
 
   /*With the height property, the height adjusts to the size of the content. */
   height: auto; /*The height is equal to the natural height of its element. */

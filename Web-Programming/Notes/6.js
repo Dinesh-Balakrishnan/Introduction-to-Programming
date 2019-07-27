@@ -1,7 +1,6 @@
 let example = objectSyntax();
 objectProperties(example, 'number');
 objectFunctionality(example);
-let quickObj = factoryFunction('indigo', 4, 10, 'square');
 
 function objectSyntax() {
   let example = {
@@ -56,6 +55,9 @@ function objectProperties(objValue, keyValue) {
   console.log(objValue[keyValue]);
   //NOTE: The key value must still be stored as a string due to bracket notation.
 
+  //Keys can also be created using bracket notation:
+  const arrToObj = ([key, value]) => ({ [key]: value });
+
   //Setting object states is similar to setting the value of array elements:
   example.number = 10; //Objects work like arrays, as in the elements are permanently changed.
 
@@ -73,14 +75,15 @@ function objectProperties(objValue, keyValue) {
 
 function objectFunctionality(obj) {
   //All enumerated, non - Symbol properties can be looped through by using 'for...in'
-  for(key in obj) {
+  for(let key in obj) {
     console.log(key); //Prints the key name.
     console.log(obj[key]); //Prints the value of the key
     //NOTE: Syntax really matters here because functions won't work.
   }
 
-  //An array of keys can simply be generated with the .keys() function:
-  obj.keys();
+  //An array of keys can simply be generated with the Object.keys() function:
+  Object.keys(obj);
+  //NOTE: Both the for-in loop and Object.keys() store the keys in sorted order.
 
   //Getter methods are used to get data. The syntax is of a variable.
   console.log("Result of getter: ")
@@ -91,28 +94,17 @@ function objectFunctionality(obj) {
 
   /*Destructuring is JavaScript syntax that allows groups of values to be
     assigned to individual variables. */
-  let {color, number : num /*Renamed as num*/} = obj;
+  let {color : col /*Renamed as col*/, number} = obj;
   //Two variables called color and number have been created.
-  console.log(color); //Logs silver
-  console.log(num); //Logs 10
+  console.log(col); //Logs silver
+  console.log(number); //Logs 10
 
   //To access nested objects through destructuring:
   let {nestedObj : {color}} = obj;
   console.log(color);
 
   //Even if an object is set to constant, it's data can still be modified.
-  /*By using Object.freeze(objectName), properties cannot be added to, updated, 
+  /*By using Object.freeze(objectName), properties cannot be added to, updated,
   or deleted in the object. */
   Object.freeze(obj);
-}
-
-//A factory function is used to quickly create an object with desired behaviors and states.
-function factoryFunction(color, number, month, shape) {
-  return {
-    //Thanks to ES6 destructuring, color doesn't needed to be stated as 'color: color'.
-    color,
-    number,
-    month,
-    shape
-  }
 }

@@ -17,16 +17,27 @@
       <label><input type='radio' name='radio_button'>2</label>
       <label><input type='radio' name='radio_button'>3</label>
 
-      <!--Checkbox buttons are created the same way, with a type of 'checkbox'.
-          The 'required' attribute on the first checkbox states that an answer is
-          required. The other buttons don't require the 'required' attribute-->
-      <label><input type='checkbox' name='checkbox_button' required>1</label>
-      <label><input type='checkbox' name='checkbox_button'>2</label>
-      <!--The 'default' attribute automatically checks a button. -->
-      <label><input type='checkbox' name='checkbox_button' default>3</label>
+      <!--The fieldset tag surrounds an entire grouping of input elements to
+        indicate that the choices are all part of the same set. -->
+      <fieldset>
+        <legend>The legend tag contains the title for the input group.</legend>
+
+        <!--Checkbox buttons are created like radio buttons, with a type of 'checkbox'.
+            The 'required' attribute on the first checkbox states that an answer is
+            required. The other buttons don't require the 'required' attribute-->
+        <label><input type='checkbox' name='checkbox_button' required>1</label>
+        <label><input type='checkbox' name='checkbox_button'>2</label>
+        <!--The 'default' attribute automatically checks a button. -->
+        <label><input type='checkbox' name='checkbox_button' default>3</label>
+      </fieldset>
 
       <!--Input values can also be disabled with the 'disabled' keyword: -->
       <input type='text' disabled>
+
+      <!--The label value can be used in a different manner, the label's for
+        attribute equaling the target input's id attribute. -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
 
       <!--A form submit button can be created as follows: -->
       <button type='submit'>Complete</button>

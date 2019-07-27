@@ -3,7 +3,8 @@ arrayMethods(newYearsResolutions);
 
 function basicArraySyntax() {
   //To create a variable of type array:
-  let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+  let newYearsResolutions = new Array(3); //Array of length 3.
+  newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
 
   let nest = [[1, 2], [3, 4], [5, 6]];
 
@@ -12,13 +13,27 @@ function basicArraySyntax() {
 
   //Arrays follow standard 0-based indexing.
   rand[0] = 4; //Notice that constant arrays can still be changed.
-  console.log(nest[1][0]); //Logs 3
+  console.log(nest[2][0]); //Logs 5
 
-  //NOTE: Strings can also be accessed with such a format:
+  //Strings can also be accessed with such a format:
   console.log('See you'[1]); //Logs e
+
+  //In fact, an element of type string can be converted into an an element of type array:
+  let arr = 'Hello Word'.split('');
+
+  //A string can then be easily reversed with the array reverse function:
+  let newStr = arr.reverse();
 
   //The length of an array can be found with the .length property.
   console.log(newYearsResolutions.length); //Logs 3
+
+  //Oddly enough, arrays are not arrays. Arrays are actually objects!
+  let newYearsResolutionsObj = {
+    '0': 'Keep a journal',
+    '1': 'Take a falconry class',
+    '2': 'Learn to juggle',
+    length: 3
+  }; //This is very similar to how arrays store values.
 
   return newYearsResolutions;
 }
@@ -39,8 +54,11 @@ function arrayMethods(newYearsResolutions) {
   //Elements within a certain index range can be targeted with .slice().
   console.log(newYearsResolutions.slice(0, 2)); //Logs ['Keep a journal', 'Take a falconry class']
 
-  //The index of an element can be found with .indexOf()/
+  //The index of an element can be found with .indexOf() and .lastIndexOf()/
   console.log(newYearsResolutions.indexOf('Exersize frequently')); //Logs -1
+
+  //.includes() is Javascript's version of Java's .contains()
+  console.log(newYearsResolutions.includes('Exersize frequently')); //Logs false
 
   //The elements of an array can be concatenated together into a string with .join().
   let example = [10, 11, 12];
@@ -64,8 +82,8 @@ function arrayMethods(newYearsResolutions) {
   let num3 = [7, 8, 9];
   console.log(num1.concat(num2, num3)); //Logs [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-  //An alternative to .concat() is pushing values with the spread operator:
-  num3.unshift([...num1], [...num2]); //Equals [1, 2, 3, 4, 5, 6, 7 ,8, 9]
+  //A mutation alternative to .concat() is pushing values with the spread operator:
+  num3.unshift(...num1, ...num2); //Equals [1, 2, 3, 4, 5, 6, 7 ,8, 9]
 
   //If elements have to be placed in a certain location:
   num2 = [...num1, 0, ...num3];
