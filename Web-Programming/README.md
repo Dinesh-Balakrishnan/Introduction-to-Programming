@@ -17,7 +17,10 @@
 * [The Document Object Model](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/5.html)
 
 
-* [Handlebars](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/6.html)
+* [Forms](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/8.html)
+
+
+* [Semantic Tags and Accessibility](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/9.html)
 
 ## Notes - CSS
 
@@ -38,6 +41,18 @@
 
 * [Flexbox](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/6.css)
 
+
+* [Grid](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/10.css)
+
+
+* [Pseudo-Classes](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/7.css)
+
+
+* [Shadows, Gradients, and Transformations](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/8.css)
+
+
+* [Animations and Transformations](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/9.css)
+
 ## Notes - JavaScript (ES6 Syntax)
 
 * [Strings, Variables, and Data Types](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/1.js)
@@ -52,13 +67,13 @@
 * [Array Syntax](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/4.js)
 
 
-* [Loops and Array  Iterators](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/5.js)
+* [Loops and Array Iterators](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/5.js)
 
 
 * [Objects](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/6.js)
 
 
+* [Classes (Syntatic Sugar)](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/8.js)
+
+
 * [Website Style and Functionality](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/7.js)
-
-
-* [jQuery](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/7.html)
