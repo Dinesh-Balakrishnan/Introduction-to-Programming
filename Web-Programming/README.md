@@ -1,6 +1,6 @@
 # Web Development
 
-## Notes - HTML
+## HTML
 
 * [Basic HTML Tags](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/1.html) 
 
@@ -22,7 +22,7 @@
 
 * [Semantic Tags and Accessibility](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/9.html)
 
-## Notes - CSS
+## CSS
 
 * [Selectors and Basic Style Attributes](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/1.css)
 
@@ -53,7 +53,7 @@
 
 * [Animations and Transformations](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/9.css)
 
-## Notes - JavaScript (ES6 Syntax)
+## JavaScript (ES6 Syntax)
 
 * [Strings, Variables, and Data Types](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/1.js)
 
