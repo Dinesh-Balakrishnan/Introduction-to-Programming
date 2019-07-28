@@ -54,5 +54,3 @@ export {constVar, ExampleClass as ChangedClass};
  by another file with any name declaration. Named exports that aren't
  default must be imported using the same exported name. */
 export default 'I can be assigned any var name wanted!';
-
-/*.mjs, cors, nodejs modules */

@@ -1,7 +1,7 @@
 //importingCode(); //(Uses require(), a NodeJS method)
 
-function importingCode() {
-  //All code can be imported into a file by using require(). (NodeJS)
+function importingCode() /*(NodeJS)*/ {
+  //All code can be imported into a file by using require().
 
   //Receiving all imports:
   const obj = require('\9.js');

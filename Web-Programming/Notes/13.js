@@ -30,10 +30,10 @@ DEFINTIONS:
     - POST: Submit data to server.
     - PUT: Submit data to server at the specified location. (Indempotent)
     - DELETE: Deletes data contained by server.
-    - OPTIONS:
-    - CONNECT:
-    - TRACE:
-    - PATCH:
+    - OPTIONS: Finds what request methods can be performed.
+    - CONNECT: Starts a two-way communication tunnel with the server.
+    - TRACE: Performs a message loop-back test for debugging purposes.
+    - PATCH: Applies partial modifications to a source.
 
 */
 
