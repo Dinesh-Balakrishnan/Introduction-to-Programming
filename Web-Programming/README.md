@@ -76,4 +76,25 @@
 * [Classes (Syntatic Sugar)](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/8.js)
 
 
+* [Prototypes](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/15.js)
+
+
+* [Class Problems and Factory Functions](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/16.js)
+
+
 * [Website Style and Functionality](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/7.js)
+
+
+* [Exporting](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/9.js), and [Importing](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/10.js)
+
+
+* [Throwing Errors](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/11.js)
+
+
+* [Asynchronity and Promises](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/12.js)
+
+
+* [Requests and fetch()](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/13.js)
+
+
+* [Regex](https://github.com/Dinesh-Balakrishnan/Programming-And-Scripting-Notes/blob/master/Web-Programming/Notes/14.js)
