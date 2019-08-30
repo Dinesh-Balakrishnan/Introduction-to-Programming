@@ -27,11 +27,13 @@
       }
 
       /*To target retina displays: */
-      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
         /*To make most images appear retina, their size should be decreased
           by half. Better resolution, but smaller image size. */
-        height: 50%;
-        width: 50%;
+          img {
+            height: 50%;
+            width: 50%;
+          }
       }
     </style>
   </head>
@@ -93,6 +95,10 @@
         </figcaption>
       </figure>
     </main>
+
+    <aside>
+      An aside simple contains extra information such as links or side-notes.
+    </aside>
 
     <section>
       <h1>Comments Section</h1>

@@ -19,7 +19,7 @@ function importingCode() /*(NodeJS)*/ {
 //NOTE: the import statement must be top-level, meaning it can't be within a function.
 
 //Importing the default export from a file:
-import temp from '\9.js';
+import temp from '\9.js'; //Bare import specifiers, such as '9.js', aren't supported.
 
 //Importing named exports from a file:
 import {constVar as changedName, exampleVar} from '\9.js';

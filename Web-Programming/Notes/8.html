@@ -2,7 +2,7 @@
 <html>
   <body>
     <!--Web forms can submit data to a server with just HTML using the form tag-->
-    <form action='URL to Submit Data'>
+    <form action='URL to Submit Data' method="GET"></form> <!--Forms use POST or GET-->
       <!--An input field is used to creat a text field. The placeholder attribute
           is used to display text when the user hasn't inputted anything. -->
       <input type='text' placeholder='Placeholder Text'>
@@ -31,6 +31,22 @@
         <label><input type='checkbox' name='checkbox_button' default>3</label>
       </fieldset>
 
+      <!--select is very similar to buttons. The size attribute determines the height
+        of the container, equal to how many elements should be displayed. 'multiple' allows 
+        many elements to be selected. -->
+      <select name="ice-cream" size="3" multiple>
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+        <!--To make a value selected by default: -->
+        <option value="cookiesandcream" selected>Cookies &amp; Creme</option>
+      </select>
+
+      <!--textarea are simply text fields meant to display more input text: -->
+      <textarea name="message" rows="10" cols="30">
+        This is default text and has to be manually deleted.
+      </textarea>
+
       <!--Input values can also be disabled with the 'disabled' keyword: -->
       <input type='text' disabled>
 
@@ -38,6 +54,8 @@
         attribute equaling the target input's id attribute. -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
+
+      <!--A button can be created -->
 
       <!--A form submit button can be created as follows: -->
       <button type='submit'>Complete</button>
@@ -47,6 +65,6 @@
     </form>
     <!-- Other Input Types: color, date, datetime-local, email , file,
          hidden, image, month, number, password, range, search, submit, tel,
-         time, url, week -->
+         time, url, week (https://www.w3schools.com/html/html_form_input_types.asp)-->
   </body>
 </html>

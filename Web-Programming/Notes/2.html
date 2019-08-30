@@ -8,10 +8,18 @@ DEFINITIONS:
 
 -->
 <html>
-  <!--The head tag contains the metadata about a webpage. -->
+  <!--The head tag contains the metadata about a webpage, including scripts. -->
   <head>
     <!--The title tag will display the text that appears on the browser's window -->
     <title>Practice</title>
+
+    <!--The meta tag contains most metadata for the page.-->
+    <meta charset="UTF-8"> <!--The character set used to make the page.-->
+    <meta name="description" content="Example Code">
+    <meta name="keywords" content="Code, Example">
+    <meta name="author" content="Dinesh Krishnan Balakrishnan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30"> <!--Refreshes every 30 seconds.-->
   </head>
 
   <!-- All elements can be specifically targeted by giving themselves an identification using the id
@@ -39,5 +47,8 @@ DEFINITIONS:
 
     <!--The # symbol represents a dead link. -->
     <a href="#">Need to insert link.</a>
+
+    <!--An element can have a tooltip, which gives detail when the element is hovered over. To create one: -->
+    <a title="Dead Link" href="#">Click Here?</a>
   </body>
 </html>

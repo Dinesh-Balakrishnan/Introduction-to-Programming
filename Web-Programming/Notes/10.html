@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <div id="Semantic Tags">
+            <!--Quoted Text:-->
+            <q>This is a quote, by me.</q>
+
+            <!--Citation: -->
+            <blockquote cite="Blockquotes are from other sources.">Hello everyone.</blockquote>
+            <p>By <cite>The Unkown</cite></p>
+
+            <!--Abbreviation: -->
+            <p>I am <abbr title="Dinesh Krishnan Balakrishnan">DKB!</abbr></p>
+
+            <!--Contact Information: -->
+            <address>
+                Dinesh Krishnan Balakrishnan <br>
+                Phone: (000)-000-0000 <br>
+                Office: Somewhere <br>
+            </address>
+
+            <!--Description Lists: -->
+            <dl>
+                <dt>Dinesh</dt> <!--Description Term (Name)-->
+                <dd>Person whose name starts with a D.</dd> <!--Description of the term.-->
+                <dt>Taran</dt>
+                <dd>Person whose name starts with a T.</dd>
+            </dl>
+
+            <!--To include code and Program Output: -->
+            <code>
+                int index = 0;<br>
+                size = 1;
+            </code>
+            <p>Console Logged: <samp>Syntax Error: <var>size</var> variable is missing type.</samp></p>
+
+            <!--Text Indicating Keyboard Input: -->
+            <p>Undo changes by pressing <kbd>Ctr + Z</kbd></p>
+        </div>
+
+        <div id="Functional Tags">
+            <!--To prevent HTML from ignoring whitespace: -->
+            <pre>There  are  two  spaces  between  each  word  in  this  sentence.</pre>
+
+            <!--Additional Text Formatting Tags: -->
+            <del>Deleted text (s tag).</del>
+            <mark>Marked/Highlighted text.</mark>
+            <ins>Inserted text (u tag)</ins>
+            <sub>Subscript</sub>
+            <sup>Superscript</sup>
+            <small>Relatively smaller text.</small>
+
+            <!--Bi-Directional Override: -->
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+
+            <!--To change ordered list numbering: -->
+            <ol type="1"></ol><!--Default, Also: A, a, I, i (Alphabetical and Roman Numerical)-->
+
+            <!--To change ordered list start value: -->
+            <ol start="50"></ol> <!--Always a numerical value, regardless of type.-->
+
+            <!--Inline Frame / Nested Browsing Context: -->
+            <iframe src="https://document.example"></iframe>
+
+            <!--Responsive Images: -->
+            <picture>
+                <!--Various sources load different images depending on the media queries specified.-->
+                <source media="(-webkit-min-device-pixel-ratio: 2), 
+                (min-resolution: 192dpi) " srcset="retina.jpg" />
+                <source media="(min-width: 465px)" srcset="small_image.jpg" />
+
+                <!--The img tag is included at the end for compatibility and setting a default value.-->
+                <img src="normal_image.jpg" alt="Some Image" />
+            </picture>
+
+            <!--HTML Entities allow for the display of special characters: -->
+            &nbsp; <!--Non-Breaking Space ' '-->
+            &lt; <!--Less Than '<'-->
+            &gt; <!--Greater Than '>'-->
+            &amp; <!--Ampersand '&'-->
+            &quot; <!--Double Quotation Mark '"'-->
+            &apos; <!--Apostrophe (''')-->
+            <!--For a full list: see https://www.w3schools.com/html/html_symbols.asp -->
+        </div>
+    </body>
+</html>
