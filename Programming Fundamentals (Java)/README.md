@@ -1,4 +1,4 @@
-# CS312 - Introduction to Programming
+# Programming Fundamentals
 
 **Language:** Java
 
