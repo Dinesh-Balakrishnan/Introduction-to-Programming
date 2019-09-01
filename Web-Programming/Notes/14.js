@@ -101,7 +101,7 @@ function regexMetacharacters() {
   regex = /d\b/;
 
   //Capture groups find repeat substrings in regex expressions: /(pttrn1)(pattrn2)..\1\2../
-  //NOTE: The pattern captured in the string becomes the exact pattern being matched.
+  //NOTE: The pattern captured intially in the string becomes the exact pattern being matched the next time.
   regex = /(User:\s*#\d+\s)(Password:\s*\w+\s)\1\2/;
 
   //To prevent the use of parentheses from becoming a capture group: /(?:pttrn)/
