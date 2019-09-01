@@ -97,6 +97,7 @@ function regexMetacharacters() {
 
   //To match for a sequence at the beginning/end of each word: /\bsequence|sequence\b/
   //To match for a sequence NOT at the beginning/end of each word: /\Bsequence|sequence\B/
+  //NOTE: \b represents a boundary, the position between a word and a space.
   regex = /d\b/;
 
   //Capture groups find repeat substrings in regex expressions: /(pttrn1)(pattrn2)..\1\2../
