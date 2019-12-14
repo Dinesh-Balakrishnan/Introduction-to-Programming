@@ -9,7 +9,7 @@
   grid-template-rows: 100px 50px 50px; /*3 rows, first 100px. */
   grid-template-columns: 50px 50px; /*Two columns, each 50px. */
 
-  /*'fr' is a grid unit indicating free space. Rows and colums with these units
+  /*'fr' is a grid unit indicating free space. Rows and columns with these units
     calculate them after other units. ('auto' keeps just the content, no spacing)*/
   grid-template-rows: 100px 100px 2fr 1fr; /* 100px 100px 200px 100px */
 
